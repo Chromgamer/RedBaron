@@ -1,0 +1,7 @@
+Plane_designs = {
+	icon = generic_propaganda
+
+	visible = {
+        always = yes
+	}
+}

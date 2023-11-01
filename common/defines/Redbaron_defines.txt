@@ -1,0 +1,2 @@
+NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1
+NDefines.NNavy.NAVAL_MINES_DECAY_AT_PEACE_TIME = 1000                    -- WAS 0.25
