@@ -1,0 +1,116 @@
+ideas = {
+
+	country = {
+		looming_axis_victory = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+			}
+            
+            picture = generic_morale_bonus
+
+            on_remove = {
+                if = {
+                    limit = {
+                        has_global_flag = { flag = AXIS_VIC value = 1 }
+                    }
+                    every_country = {news_event = { id = redbaron.1 } }
+                }
+            }
+            cancel = { 
+                has_global_flag = { flag = AXIS_VIC value = 0 }
+            }
+
+        }
+		looming_allies_defeat = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = generic_morale_bonus
+						
+			modifier = {
+
+			}
+
+            on_remove = {
+                if = {
+                    limit = {
+                        has_global_flag = { flag = AXIS_VIC value = 1 }
+                    }
+                }
+            }
+            cancel = { 
+                has_global_flag = { flag = AXIS_VIC value = 0 }
+            }	
+		}
+
+        looming_allies_victory = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = generic_morale_bonus
+			
+			modifier = {
+			}
+
+            on_remove = {
+                if = {
+                    limit = {
+                        has_global_flag = { flag = ALLIES_VIC value = 1 }
+                    }
+                    every_country = {news_event = { id = redbaron.2 } }
+                }
+            }
+            cancel = { 
+                has_global_flag = { flag = ALLIES_VIC value = 0 }
+            }	
+        }
+		looming_axis_defeat = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = generic_morale_bonus
+						
+			modifier = {
+
+			}
+
+            on_remove = {
+                if = {
+                    limit = {
+                        has_global_flag = { flag = ALLIES_VIC value = 1 }
+                    }
+                }
+            }
+            cancel = { 
+                has_global_flag = { flag = ALLIES_VIC value = 0 }
+            }	    
+
+		}
+    }
+}

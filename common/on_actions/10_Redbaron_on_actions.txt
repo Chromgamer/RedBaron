@@ -1,0 +1,74 @@
+on_actions = {
+	on_daily_GER = {
+		effect = {
+			if = {
+				limit = {
+					GER = { has_war_with = SOV }
+				}
+				victory_requierements = yes
+			}
+
+		}
+	}
+	on_war = {
+		effect = {
+				if = {
+					limit = {
+						GER = { has_war_with = POL }
+					}
+					ARG = {
+						add_ideas = SPA_la_division_azul
+						remove_ideas = elwolfmod_novols#
+					}
+				}
+
+			}
+	}
+
+	on_startup = { 
+		effect = {
+			set_global_flag = { flag = AXIS_VIC value = 0 }
+			set_global_flag = { flag = ALLIES_VIC value = 0} 
+			ARG = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 3200
+				}
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = GER
+						tag = ITA
+						tag = JAP
+						tag = BUL
+						tag = HUN
+						tag = ROM
+						tag = FIN
+						tag = MAN
+						tag = SIA
+						tag = SPR
+						tag = AUS
+						tag = VIC
+					}
+				}
+					add_operation_token = {
+						tag = ARG
+						token = team_civilian
+					}
+					add_operation_token = {
+						tag = ARG
+						token = team_army
+					}
+					add_operation_token = {
+						tag = ARG
+						token = team_navy
+					}
+					add_operation_token = {
+						tag = ARG
+						token = team_airforce
+					}
+				}
+		}		
+	}
+}
