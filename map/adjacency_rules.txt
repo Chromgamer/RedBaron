@@ -404,45 +404,45 @@ adjacency_rule =
 	offset = { 9 0 6 }
 }
 
-adjacency_rule =
-{
-	name = "Berlin-Bueonos_Aires"
-
-	contested =
-	{
-		army = no
-		navy = no
-		submarine = yes
-		trade = no
-	}
-	enemy =
-	{
-		army = no
-		navy = no
-		submarine = yes
-		trade = no
-	}
-	friend =
-	{
-		army = no
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	neutral =
-	{
-		army = no
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	
-	required_provinces = { 12364 }
-	is_disabled = {
-		NOT = {
-			tag=ARG
-		
-		}
-		
-	}
-}
+#adjacency_rule =
+#{
+#	name = "Berlin-Bueonos_Aires"
+#
+#	contested =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = yes
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = no
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = no
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 12364 }
+#	is_disabled = {
+#		NOT = {
+#			tag=ARG
+#		
+#		}
+#		
+#	}
+#}
