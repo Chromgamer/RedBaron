@@ -418,28 +418,28 @@ adjacency_rule =
 #	enemy =
 #	{
 #		army = no
-#		navy = no
+##		navy = no
 #		submarine = yes
 #		trade = no
 #	}
 #	friend =
 #	{
-#		army = no
+##		army = no
 #		navy = yes
 #		submarine = yes
-#		trade = yes
+##		trade = no
 #	}
 #	neutral =
 #	{
-#		army = no
+##		army = no
 #		navy = yes
 #		submarine = yes
-#		trade = yes
+##		trade = no
 #	}
 #	
 #	required_provinces = { 12364 }
 #	is_disabled = {
-#		NOT = {
+##		NOT = {
 #			tag=ARG
 #		
 #		}
