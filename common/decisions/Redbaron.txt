@@ -138,50 +138,7 @@ operations = {
                         is_core_of = ARG
                         is_controlled_by = ROM
                     }
-                    add_core_of = ARG
-                }
-            }
-
-        }
-     annex_Ireland = {
-            # icon = generic_operation
-            allowed = {
-                tag = FRA
-            }
-            fire_only_once = yes
-            cost = 0
-            ai_will_do = {
-                factor = 0
-            }
-            available = {
-                AND = { IRE = {
-                         is_ai = yes
-                         }
-                        GER = { has_war_with = POL }
-                }
-                    }
-            targets = {
-                IRE
-            }
-            complete_effect = {
-                IRA = {
-                    transfer_units_fraction = {
-                        target = FRA
-                        size = 1
-                        stockpile_ratio = 1
-                        army_ratio = 1
-                        navy_ratio = 1
-                        air_ratio = 1
-                        keep_unit_leaders_trigger = {
-                            always = no
-                        }
-                    }
-                }
-                FRA = {
-                    annex_country = {
-                        target = IRE
-                        transfer_troops = yes
-                    }
+                    add_core_of = ROM
                 }
             }
 
