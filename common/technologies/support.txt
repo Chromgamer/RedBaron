@@ -928,7 +928,9 @@ technologies = {
 			leads_to_tech = tech_field_hospital3
 			research_cost_coeff = 1
 		}
-
+		available = {
+			always = no
+		}
 		research_cost = 1.5
 		start_year = 1939
 		folder = {
