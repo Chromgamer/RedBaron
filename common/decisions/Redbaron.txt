@@ -13,6 +13,9 @@ operations = {
                 SAF = {
                     is_ai = yes
                 }
+                ENG = {
+                    has_completed_focus = uk_south_africa_focus
+                }
             }
             targets = {
                 SAF
@@ -60,6 +63,7 @@ operations = {
             available = {
                 MEX = {
                     is_ai = yes
+                    has_completed_focus = MEX_focus_soldaderas
                 }
             }
             targets = {
