@@ -446,11 +446,13 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 
-		iconType = {
+		buttonType = {
 			name = "btn_mission_4"
 			spriteType = "GFX_operative_mission_button_background"
+			clicksound = click_default
 			position = { x=258 y=@btn_mission_y }
 			frame = 1
+			shortcut = "n"
 		}
 		iconType = {
 			name = "icn_mission_4"
