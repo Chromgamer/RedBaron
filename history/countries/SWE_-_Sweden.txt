@@ -47,6 +47,9 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	basic_train = 1
+	advanced_infantry_weapons = 1
+	antiair2 = 1
+	antiair5 = 1
 }
 
 if = {

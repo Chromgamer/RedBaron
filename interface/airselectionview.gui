@@ -797,7 +797,13 @@ guiTypes = {
 		size = { width=47 height=34 }
 		Orientation = upper_left
 
-
+		iconType = {
+			name = "btn"
+			position = {x=0 y=0}
+			spriteType = "GFX_strategicair_mission_btn_checkbox_bg"
+			frame = 2
+		}
+		
 		iconType = {
 			name = "icon"
 			position = {x=3 y=3}

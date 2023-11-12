@@ -69,6 +69,15 @@ on_actions = {
 						token = team_airforce
 					}
 				}
+		}
+		effect = {
+			ARG = {
+			add_ideas = no_faction
+			}
+			SPR = {
+			add_ideas = no_faction
+			}
+
 		}		
 	}
 }

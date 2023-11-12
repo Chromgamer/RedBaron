@@ -5,3 +5,10 @@ Plane_designs = {
         always = yes
 	}
 }
+hosttool_tech = {
+	icon = generic_propaganda
+
+	visible = {
+        always = yes
+	}
+}

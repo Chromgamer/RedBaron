@@ -1,0 +1,16 @@
+Naval_treaty = {
+	name = "Naval Treaty"
+	group = "elwolfmod Rules"
+	icon = "GFX_decision_eng_trade_unions_support"
+	default = {
+		name = off
+		text = "GOff"
+		desc = "Naval Treaty disabled (Reccomended)"
+	}
+	option = {
+		name = on
+		text = "ROn"
+		desc = "Naval Treaty enabled (Not Reccomended)"
+	}
+}
+
