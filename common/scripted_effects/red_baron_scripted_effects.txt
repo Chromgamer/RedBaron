@@ -40,14 +40,14 @@ victory_requierements = {
 				limit = {allies = yes}
 				add_timed_idea = {
 					idea = looming_allies_defeat
-					days= 180
+					days= 365
 				}
 			}
 			if ={
 				limit = {axis = yes}
 				add_timed_idea = {
 					idea = looming_axis_victory
-					days= 180
+					days= 365
 				}
 			}	
 		}	
@@ -56,7 +56,15 @@ victory_requierements = {
 		limit = { 
 			check_variable = { AXIS_VIC < 7 }
 		}
-		set_global_flag = { flag = AXIS_VIC value = 0 }		
+		set_global_flag = { flag = AXIS_VIC value = 0 }
+		every_country = {
+			limit = {
+				is_playable_country = yes
+			}
+			add_ideas = {
+				victory_con
+			}
+		}			
 	}
 	if = {
 		limit = { 
@@ -68,14 +76,14 @@ victory_requierements = {
 				limit = {allies = yes}
 				add_timed_idea = {
 					idea = looming_allies_victory
-					days= 180
+					days= 365
 				}
 			}
 			if ={
 				limit = {axis = yes}
 				add_timed_idea = {
 					idea = looming_axis_defeat
-					days= 180
+					days= 365
 				}
 			}	
 		}	
@@ -84,6 +92,15 @@ victory_requierements = {
 		limit = { 
 			check_variable = { ALLIES_VIC < 7 }
 		}
-		set_global_flag = { flag = ALLIES_VIC value = 0 }		
+		set_global_flag = { flag = ALLIES_VIC value = 0 }
+		every_country = {
+			limit = {
+				is_playable_country = yes
+			}
+			add_ideas = {
+				victory_con
+			}
+		}	
 	}
 }
+

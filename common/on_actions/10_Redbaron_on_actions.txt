@@ -78,6 +78,18 @@ on_actions = {
 			add_ideas = no_faction
 			}
 
-		}		
+		}
+		effect = {
+			every_country = {
+				limit = {
+					is_playable_country = yes
+				}
+				add_ideas = {
+					victory_con
+				}
+			}
+
+		}
 	}
+	
 }

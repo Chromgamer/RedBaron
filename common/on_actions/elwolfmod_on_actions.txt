@@ -496,18 +496,72 @@ on_actions = {
 							}
 							AND = {
 								tag = SPR
-								GER = { 
+								OR = {								
+									GER = { 
 										has_volunteers_amount_from = {
 											tag = ROOT
-									} 
+										} 
+									}
+									HUN = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									ITA = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									FIN = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									ROM = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									BUL = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
 								}
 							}
 							AND = {
 								tag = ARG
-								GER = { 
+								OR = {								
+									GER = { 
 										has_volunteers_amount_from = {
 											tag = ROOT
-									} 
+										} 
+									}
+									HUN = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									ITA = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									FIN = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									ROM = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									BUL = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
 								}
 							}
 						}

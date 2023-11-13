@@ -112,7 +112,33 @@ ideas = {
             }	    
 
 		}
+        victory_con = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = generic_morale_bonus
+						
+			modifier = {
+
+			}
+
+            on_remove = {
+            }
+            cancel = { 
+                Or = {
+                        has_global_flag = { flag = ALLIES_VIC value = 1 }
+                        has_global_flag = { flag = AXIS_VIC value = 1 }
+                    }
+            }	    
     }
+    }
+    
     hidden_ideas = {
         no_faction = {
             allowed = {

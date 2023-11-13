@@ -106,19 +106,73 @@ ideas = {
 					has_war = yes
 					AND = {
 						tag = SPR
-						GER = { 
-							has_volunteers_amount_from = {
-							tag = SPR
-							} 
-						}
+						OR = {								
+									GER = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									HUN = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									ITA = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									FIN = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									ROM = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									BUL = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+								}
 					}
 					AND = {
 						tag = ARG
-						GER = { 
-							has_volunteers_amount_from = {
-							tag = ARG
-							} 
-						}
+						OR = {								
+									GER = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									HUN = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									ITA = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									FIN = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									ROM = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									BUL = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+								}
 					}
 				}
 			}
@@ -133,7 +187,7 @@ ideas = {
 				mobilization_speed = 2
 				army_fuel_consumption_factor = -0.9
 				air_fuel_consumption_factor = -0.9
-				navy_fuel_consumption_factor = -0.98
+				navy_fuel_consumption_factor = -0.99
 			}
 		}
 

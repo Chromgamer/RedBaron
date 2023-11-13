@@ -1,11 +1,4 @@
-Plane_designs = {
-	icon = generic_propaganda
-
-	visible = {
-        always = yes
-	}
-}
-hosttool_tech = {
+Technologies = {
 	icon = generic_propaganda
 
 	visible = {

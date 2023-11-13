@@ -190,6 +190,51 @@ operations = {
             }
 
         }
+    annex_Irland = {
+            # icon = generic_operation
+            allowed = {
+                tag = FRA
+            }
+            fire_only_once = yes
+            cost = 0
+            ai_will_do = {
+                factor = 0
+            }
+            available = {
+                AND = { IRE = {
+                         is_ai = yes
+                         }
+                        GER = { has_war_with = POL }
+                }
+                    }
+            targets = {
+                IRE
+            }
+            complete_effect = {
+                IRE = {
+                    transfer_units_fraction = {
+                        target = ENG
+                        size = 1
+                        stockpile_ratio = 1
+                        army_ratio = 1
+                        navy_ratio = 1
+                        air_ratio = 1
+                        keep_unit_leaders_trigger = {
+                            always = no
+                        }
+                    }
+                }
+                FRA = {
+                    annex_country = {
+                        target = IRE
+                        transfer_troops = yes
+                    }
+                }
+            }
+
+        }
+}
+Technologies = {
     hosttool_gun3 = {
             # icon = generic_operation
             allowed = {
@@ -199,6 +244,20 @@ operations = {
             ai_will_do = {
                 factor = 0
             }
+            visible = {
+				OR = {
+                        tag = GER
+                        tag = ITA
+                        tag = HUN
+                        tag = ROM
+                        tag = SPR
+                        tag = BUL
+                        tag = JAP
+                        tag = SIA
+                        tag = MAN
+                        tag = FIN
+                    }
+			}
             available = {
                 AND = {
                     date > 1939.09.01
@@ -240,6 +299,23 @@ operations = {
             ai_will_do = {
                 factor = 0
             }
+            visible = {
+				OR = {
+                        tag = ENG
+                        tag = FRA
+                        tag = CAN
+                        tag = AST
+                        tag = BRA
+                        tag = MEX
+                        tag = NZL
+                        tag = USA
+                        tag = RAJ
+                        tag = SAF
+                        tag = IRE
+                        tag = SOV
+                        tag = NOR
+                    }
+			}
             available = {
                 AND = {
                     date > 1938.08.01
@@ -284,6 +360,23 @@ operations = {
             ai_will_do = {
                 factor = 0
             }
+            visible = {
+				OR = {
+                        tag = ENG
+                        tag = FRA
+                        tag = CAN
+                        tag = AST
+                        tag = BRA
+                        tag = MEX
+                        tag = NZL
+                        tag = USA
+                        tag = RAJ
+                        tag = SAF
+                        tag = IRE
+                        tag = SOV
+                        tag = NOR
+                    }
+			}
             available = {
                 AND = {
                     date > 1940.08.01
@@ -316,6 +409,121 @@ operations = {
                         }
                         cost_factor = 0
                     }
+                }
+            }
+    }
+    ENG_Fighter = {
+            # icon = generic_operation
+            allowed = {
+            }
+            fire_only_once = no
+            cost = 0
+            ai_will_do = {
+                factor = 0
+            }
+			visible = {
+					tag  = ENG
+			}
+			
+            available = {
+                        tag = ENG
+                        has_tech = improved_small_airframe
+						has_tech = engines_3
+						has_tech = aa_cannon_1
+            }
+            complete_effect = {
+                ROOT = {
+                    create_equipment_variant = {
+						name = "F2 E3 No Selfsealing"
+						type = small_plane_airframe_2
+						parent_version = 0
+						modules = {
+								fixed_main_weapon_slot = aircraft_cannon_1_2x
+								fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+								fixed_auxiliary_weapon_slot_2 = empty
+								engine_type_slot = engine_3_1x
+								special_type_slot_1 = fuel_tanks_small
+								special_type_slot_2 = fuel_tanks_small
+							}
+					}
+                }
+            }
+    }
+	ENG_Fighter_2 = {
+            # icon = generic_operation
+            allowed = {
+            }
+            fire_only_once = no
+            cost = 0
+            ai_will_do = {
+                factor = 0
+            }
+			visible = {
+					tag  = ENG
+			}
+			
+            available = {
+                        tag = ENG
+                        has_tech = improved_small_airframe
+						has_tech = engines_3
+						has_tech = aa_cannon_1
+						has_tech = survivability_studies
+            }
+            complete_effect = {
+                ROOT = {
+                    create_equipment_variant = {
+						name = "F2 E3"
+						type = small_plane_airframe_2
+						parent_version = 0
+						modules = {
+								fixed_main_weapon_slot = aircraft_cannon_1_2x
+								fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+								fixed_auxiliary_weapon_slot_2 = empty
+								engine_type_slot = engine_3_1x
+								special_type_slot_1 = fuel_tanks_small
+								special_type_slot_2 = fuel_tanks_small
+								special_type_slot_3 = self_sealing_fuel_tanks_small
+							}
+					}
+                }
+            }
+    }
+	ENG_Fighter_3 = {
+            # icon = generic_operation
+            allowed = {
+            }
+            fire_only_once = no
+            cost = 0
+            ai_will_do = {
+                factor = 0
+            }
+			visible = {
+					tag  = ENG
+			}
+			
+            available = {
+                        tag = ENG
+                        has_tech = improved_small_airframe
+						has_tech = engines_4
+						has_tech = aa_cannon_1
+						has_tech = survivability_studies
+            }
+            complete_effect = {
+                ROOT = {
+                    create_equipment_variant = {
+						name = "F2 E4"
+						type = small_plane_airframe_2
+						parent_version = 0
+						modules = {
+								fixed_main_weapon_slot = aircraft_cannon_1_2x
+								fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+								fixed_auxiliary_weapon_slot_2 = aircraft_cannon_1_2x
+								engine_type_slot = engine_4_1x
+								special_type_slot_1 = fuel_tanks_small
+								special_type_slot_2 = fuel_tanks_small
+								special_type_slot_3 = self_sealing_fuel_tanks_small
+							}
+					}
                 }
             }
     }
