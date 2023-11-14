@@ -90,6 +90,23 @@ on_actions = {
 			}
 
 		}
+		effect = {
+			if = {
+				limit = {
+					ARG = {
+						is_ai = no
+					}
+				}
+				278 = {
+					set_building_level = {
+						type = naval_base
+						level = 7
+						province = 12364
+						instant_build = yes
+					}
+				}
+			}
+		}
 	}
 	
 }
