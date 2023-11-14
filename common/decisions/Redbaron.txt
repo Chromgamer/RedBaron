@@ -487,7 +487,7 @@ Technologies = {
 					}
                 }
             }
-    }
+        }
 	ENG_Fighter_3 = {
             # icon = generic_operation
             allowed = {
@@ -527,4 +527,969 @@ Technologies = {
                 }
             }
     }
+    ENG_CAS_1 = {
+            # icon = generic_operation
+            allowed = {
+            }
+            fire_only_once = no
+            cost = 0
+            ai_will_do = {
+                factor = 0
+            }
+			visible = {
+					tag  = ENG
+			}
+			
+            available = {
+                        tag = ENG
+                        has_tech = improved_small_airframe
+						has_tech = engines_4
+						has_tech = aa_cannon_1
+						has_tech = survivability_studies
+            }
+            complete_effect = {
+                ROOT = {
+                    create_equipment_variant = {
+						name = "F2 E4"
+						type = small_plane_airframe_2
+						parent_version = 0
+						modules = {
+								fixed_main_weapon_slot = aircraft_cannon_1_2x
+								fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+								fixed_auxiliary_weapon_slot_2 = aircraft_cannon_1_2x
+								engine_type_slot = engine_4_1x
+								special_type_slot_1 = fuel_tanks_small
+								special_type_slot_2 = fuel_tanks_small
+								special_type_slot_3 = self_sealing_fuel_tanks_small
+							}
+					}
+                }
+        }
+    }
+    GER_cas = {
+                # icon = generic_operation
+                allowed = {
+                }
+                fire_only_once = no
+                cost = 0
+                ai_will_do = {
+                    factor = 0
+                }
+                visible = {
+                        tag  = GER
+                }
+
+                available = {
+                            tag = GER
+                            has_tech = improved_small_airframe
+                            has_tech = engines_3
+                            has_tech = heavy_bombs
+                            has_tech = range_improvements
+                }
+                complete_effect = {
+                    ROOT = {
+                        create_equipment_variant = {
+                            name = "barb cas"
+                            type = small_plane_cas_airframe_2
+                            parent_version = 0
+                            modules = {
+                                    fixed_main_weapon_slot = bomb_locks
+                                    fixed_auxiliary_weapon_slot_1 = heavy_bomb_locks
+                                    fixed_auxiliary_weapon_slot_2 = heavy_bomb_locks
+                                    engine_type_slot = engine_3_1x
+                                    special_type_slot_1 = fuel_tanks_small
+                                    special_type_slot_2 = non_strategic_materials
+                                    special_type_slot_3 = empty
+                                }
+                        }
+                    }
+                }
+        }
+
+
+    GER_cas_1 = {
+                # icon = generic_operation
+                allowed = {
+                }
+                fire_only_once = no
+                cost = 0
+                ai_will_do = {
+                    factor = 0
+                }
+                visible = {
+                        tag  = GER
+                }
+
+                available = {
+                            tag = GER
+                            has_tech = improved_small_airframe
+                            has_tech = engines_3
+                            has_tech = range_improvements
+                }
+                complete_effect = {
+                    ROOT = {
+                        create_equipment_variant = {
+                            name = "cas to be converted into fighter"
+                            type = small_plane_cas_airframe_2
+                            parent_version = 0
+                            modules = {
+                                    fixed_main_weapon_slot = bomb_locks
+                                    fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+                                    fixed_auxiliary_weapon_slot_2 = empty
+                                    engine_type_slot = engine_3_1x
+                                    special_type_slot_1 = fuel_tanks_small
+                                    special_type_slot_2 = fuel_tanks_small
+                                    special_type_slot_3 = empty
+                                }
+                        }
+                    }
+                }
+        }
+    JAP_CV_Fighter = {
+            # icon = generic_operation
+            allowed = {
+            }
+            fire_only_once = no
+            cost = 0
+            ai_will_do = {
+                factor = 0
+            }
+            visible = {
+                    tag  = JAP
+            }
+
+            available = {
+                        tag = JAP
+                        has_tech = improved_small_airframe
+                        has_tech = engines_3
+                        has_tech = aa_cannon_1
+			            has_tech = survivability_studies
+            }
+            complete_effect = {
+                ROOT = {
+                    create_equipment_variant = {
+                        name = "Carrier F2"
+                        type = cv_small_plane_airframe_2
+                        parent_version = 0
+                        modules = {
+                                fixed_main_weapon_slot = light_mg_4x
+                                fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+                                fixed_auxiliary_weapon_slot_2 = light_mg_4x
+                                engine_type_slot = engine_3_1x
+                                special_type_slot_1 = fuel_tanks_small
+                                special_type_slot_2 = fuel_tanks_small
+				                special_type_slot_3 = self_sealing_fuel_tanks_small
+                            }
+                    }
+                }
+            }
+    }
+
+    JAP_CV_Fighter_1 = {
+                # icon = generic_operation
+                allowed = {
+                }
+                fire_only_once = no
+                cost = 0
+                ai_will_do = {
+                    factor = 0
+                }
+                visible = {
+                        tag  = JAP
+                        has_tech = improved_small_airframe
+                }
+
+                available = {
+                            tag = JAP
+                }
+                complete_effect = {
+                    ROOT = {
+                        create_equipment_variant = {
+                            name = "Carrier F2 base"
+                            type = cv_small_plane_airframe_2
+                            parent_version = 0
+                            modules = {
+                                    fixed_main_weapon_slot = light_mg_4x
+                                    fixed_auxiliary_weapon_slot_1 = empty
+                                    fixed_auxiliary_weapon_slot_2 = empty
+                                    engine_type_slot = engine_3_1x
+                                    special_type_slot_1 = empty
+                                    special_type_slot_2 = empty
+                                    special_type_slot_3 = empty
+                                }
+                        }
+                    }
+                }
+        }
+
+
+    JAP_naval_bomber = {
+                # icon = generic_operation
+                allowed = {
+                }
+                fire_only_once = no
+                cost = 0
+                ai_will_do = {
+                    factor = 0
+                }
+                visible = {
+                        tag  = JAP
+                }
+
+                available = {
+                            tag = JAP
+                            has_tech = heavy_bombs
+                            has_tech = improved_air_launched_torpedos
+                            has_tech = improved_small_airframe
+                }
+                complete_effect = {
+                    ROOT = {
+                        create_equipment_variant = {
+                            name = "japan naval bomber cas"
+                            type = small_plane_naval_bomber_airframe_2
+                            parent_version = 0
+                            modules = {
+                                    fixed_main_weapon_slot = medium_torpedo_mountings
+                                    fixed_auxiliary_weapon_slot_1 = heavy_bomb_locks
+                                    fixed_auxiliary_weapon_slot_2 = heavy_bomb_locks
+                                    engine_type_slot = engine_3_1x
+                                    special_type_slot_1 = fuel_tanks_small
+                                    special_type_slot_2 = fuel_tanks_small
+                                    special_type_slot_3 = self_sealing_fuel_tanks_small
+                                }
+                        }
+                    }
+                }
+        }
+    ITA_Fighter = {
+            # icon = generic_operation
+            allowed = {
+            }
+            fire_only_once = no
+            cost = 0
+            ai_will_do = {
+                factor = 0
+            }
+            visible = {
+                    tag  = ITA
+            }
+
+            available = {
+                        tag = ITA
+                        has_tech = improved_small_airframe
+                        has_tech = engines_3
+			has_tech = range_improvements
+			has_tech = survivability_studies
+            }
+            complete_effect = {
+                ROOT = {
+                    create_equipment_variant = {
+                        name = "F2 E3 Selfsealing"
+                        type = small_plane_airframe_2
+                        parent_version = 0
+                        modules = {
+                                fixed_main_weapon_slot = aircraft_cannon_1_2x
+                                fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+                                fixed_auxiliary_weapon_slot_2 = empty
+                                engine_type_slot = engine_3_1x
+                                special_type_slot_1 = fuel_tanks_small
+                                special_type_slot_2 = fuel_tanks_small
+				special_type_slot_3 = self_sealing_fuel_tanks_small
+                            }
+                    }
+                }
+            }
+    }
+
+
+    ITA_Fighter_1 = {
+                # icon = generic_operation
+                allowed = {
+                }
+                fire_only_once = no
+                cost = 0
+                ai_will_do = {
+                    factor = 0
+                }
+                visible = {
+                        tag  = ITA
+                }
+
+                available = {
+                            tag = ITA
+                            has_tech = improved_small_airframe
+                            has_tech = engines_4
+                has_tech = range_improvements
+                has_tech = survivability_studies
+                }
+                complete_effect = {
+                    ROOT = {
+                        create_equipment_variant = {
+                            name = "F2 E4 Selfsealing"
+                            type = small_plane_airframe_2
+                            parent_version = 0
+                            modules = {
+                                    fixed_main_weapon_slot = aircraft_cannon_1_2x
+                                    fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+                                    fixed_auxiliary_weapon_slot_2 = aircraft_cannon_1_2x
+                                    engine_type_slot = engine_4_1x
+                                    special_type_slot_1 = fuel_tanks_small
+                                    special_type_slot_2 = fuel_tanks_small
+                    special_type_slot_3 = self_sealing_fuel_tanks_small
+                                }
+                        }
+                    }
+                }
+        }
+
+    ITA_Fighter_2 = {
+                # icon = generic_operation
+                allowed = {
+                }
+                fire_only_once = no
+                cost = 0
+                ai_will_do = {
+                    factor = 0
+                }
+                visible = {
+                        tag  = ITA
+                }
+
+                available = {
+                            tag = ITA
+                            has_tech = improved_small_airframe
+                            has_tech = engines_3
+                has_tech = range_improvements
+                }
+                complete_effect = {
+                    ROOT = {
+                        create_equipment_variant = {
+                            name = "F2 E3 no self sealing"
+                            type = small_plane_airframe_2
+                            parent_version = 0
+                            modules = {
+                                    fixed_main_weapon_slot = aircraft_cannon_1_2x
+                                    fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+                                    fixed_auxiliary_weapon_slot_2 = empty
+                                    engine_type_slot = engine_3_1x
+                                    special_type_slot_1 = fuel_tanks_small
+                                    special_type_slot_2 = fuel_tanks_small
+                    special_type_slot_3 = empty
+                                }
+                        }
+                    }
+                }
+        }
+
+    ITA_Fighter_3 = {
+                # icon = generic_operation
+                allowed = {
+                }
+                fire_only_once = no
+                cost = 0
+                ai_will_do = {
+                    factor = 0
+                }
+                visible = {
+                        tag  = ITA
+                }
+
+                available = {
+                            tag = ITA
+                            has_tech = improved_small_airframe
+                            has_tech = engines_4
+                has_tech = range_improvements
+                }
+                complete_effect = {
+                    ROOT = {
+                        create_equipment_variant = {
+                            name = "F2 E4 no self sealing"
+                            type = small_plane_airframe_2
+                            parent_version = 0
+                            modules = {
+                                    fixed_main_weapon_slot = aircraft_cannon_1_2x
+                                    fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+                                    fixed_auxiliary_weapon_slot_2 = aircraft_cannon_1_2x
+                                    engine_type_slot = engine_3_1x
+                                    special_type_slot_1 = fuel_tanks_small
+                                    special_type_slot_2 = fuel_tanks_small
+                    special_type_slot_3 = empty
+                                }
+                        }
+                    }
+                }
+        }
+
+
+    ITA_Fighter_4 = {
+                # icon = generic_operation
+                allowed = {
+                }
+                fire_only_once = no
+                cost = 0
+                ai_will_do = {
+                    factor = 0
+                }
+                visible = {
+                        tag  = ITA
+                }
+
+                available = {
+                            tag = ITA
+                            has_tech = improved_small_airframe
+                            has_tech = engines_3
+                }
+                complete_effect = {
+                    ROOT = {
+                        create_equipment_variant = {
+                            name = "F2 E3 base"
+                            type = small_plane_airframe_2
+                            parent_version = 0
+                            modules = {
+                                    fixed_main_weapon_slot = aircraft_cannon_1_2x
+                                    fixed_auxiliary_weapon_slot_1 = empty
+                                    fixed_auxiliary_weapon_slot_2 = empty
+                                    engine_type_slot = engine_3_1x
+                                    special_type_slot_1 = empty
+                                    special_type_slot_2 = empty
+                    special_type_slot_3 = empty
+                                }
+                        }
+                    }
+                }
+        }
+
+    ITA_Fighter_5 = {
+                # icon = generic_operation
+                allowed = {
+                }
+                fire_only_once = no
+                cost = 0
+                ai_will_do = {
+                    factor = 0
+                }
+                visible = {
+                        tag  = ITA
+                }
+
+                available = {
+                            tag = ITA
+                            has_tech = improved_small_airframe
+                            has_tech = engines_4
+                }
+                complete_effect = {
+                    ROOT = {
+                        create_equipment_variant = {
+                            name = "F2 E4 base"
+                            type = small_plane_airframe_2
+                            parent_version = 0
+                            modules = {
+                                    fixed_main_weapon_slot = aircraft_cannon_1_2x
+                                    fixed_auxiliary_weapon_slot_1 = empty
+                                    fixed_auxiliary_weapon_slot_2 = empty
+                                    engine_type_slot = engine_3_1x
+                                    special_type_slot_1 = empty
+                                    special_type_slot_2 = empty
+                    special_type_slot_3 = empty
+                                }
+                        }
+                    }
+                }
+        }
+
+
+    ITA_CV_Fighter = {
+                # icon = generic_operation
+                allowed = {
+                }
+                fire_only_once = no
+                cost = 0
+                ai_will_do = {
+                    factor = 0
+                }
+                visible = {
+                        tag  = ITA
+                }
+
+                available = {
+                            tag = ITA
+                            has_tech = improved_small_airframe
+                            has_tech = engines_3
+                }
+                complete_effect = {
+                    ROOT = {
+                        create_equipment_variant = {
+                            name = "Carrier F2 base ITA"
+                            type = cv_small_plane_airframe_2
+                            parent_version = 0
+                            modules = {
+                                    fixed_main_weapon_slot = light_mg_4x
+                                    fixed_auxiliary_weapon_slot_1 = empty
+                                    fixed_auxiliary_weapon_slot_2 = empty
+                                    engine_type_slot = engine_3_1x
+                                    special_type_slot_1 = empty
+                                    special_type_slot_2 = empty
+                    special_type_slot_3 = empty
+                                }
+                        }
+                    }
+                }
+        }
+
+    ITA_CV_Fighter_1 = {
+                # icon = generic_operation
+                allowed = {
+                }
+                fire_only_once = no
+                cost = 0
+                ai_will_do = {
+                    factor = 0
+                }
+                visible = {
+                        tag  = ITA
+                }
+
+                available = {
+                            tag = ITA
+                            has_tech = improved_small_airframe
+                            has_tech = engines_3
+                            has_tech = aa_cannon_1
+                has_tech = survivability_studies
+                has_tech = range_improvements
+                }
+                complete_effect = {
+                    ROOT = {
+                        create_equipment_variant = {
+                            name = "Carrier F2 ITA"
+                            type = cv_small_plane_airframe_2
+                            parent_version = 0
+                            modules = {
+                                    fixed_main_weapon_slot = light_mg_4x
+                                    fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+                                    fixed_auxiliary_weapon_slot_2 = light_mg_4x
+                                    engine_type_slot = engine_3_1x
+                                    special_type_slot_1 = fuel_tanks_small
+                                    special_type_slot_2 = fuel_tanks_small
+                    special_type_slot_3 = self_sealing_fuel_tanks_small
+                                }
+                        }
+                    }
+                }
+        }
+
+
+    ITA_cas = {
+                # icon = generic_operation
+                allowed = {
+                }
+                fire_only_once = no
+                cost = 0
+                ai_will_do = {
+                    factor = 0
+                }
+                visible = {
+                        tag  = ITA
+                }
+
+                available = {
+                            tag = ITA
+                            has_tech = improved_small_airframe
+                            has_tech = engines_3
+                has_tech = heavy_bombs
+                has_tech = range_improvements
+                }
+                complete_effect = {
+                    ROOT = {
+                        create_equipment_variant = {
+                            name = "barb cas ITA"
+                            type = small_plane_cas_airframe_2
+                            parent_version = 0
+                            modules = {
+                                    fixed_main_weapon_slot = bomb_locks
+                                    fixed_auxiliary_weapon_slot_1 = heavy_bomb_locks
+                                    fixed_auxiliary_weapon_slot_2 = heavy_bomb_locks
+                                    engine_type_slot = engine_3_1x
+                                    special_type_slot_1 = fuel_tanks_small
+                                    special_type_slot_2 = non_strategic_materials
+                    special_type_slot_3 = empty
+                                }
+                        }
+                    }
+                }
+        }
+
+    ITA_cas_1 = {
+                # icon = generic_operation
+                allowed = {
+                }
+                fire_only_once = no
+                cost = 0
+                ai_will_do = {
+                    factor = 0
+                }
+                visible = {
+                        tag  = ITA
+                }
+
+                available = {
+                            tag = ITA
+                            has_tech = improved_small_airframe
+                            has_tech = engines_3
+                has_tech = range_improvements
+                }
+                complete_effect = {
+                    ROOT = {
+                        create_equipment_variant = {
+                            name = "cas to be converted into fighter ITA"
+                            type = small_plane_cas_airframe_2
+                            parent_version = 0
+                            modules = {
+                                    fixed_main_weapon_slot = bomb_locks
+                                    fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+                                    fixed_auxiliary_weapon_slot_2 = empty
+                                    engine_type_slot = engine_3_1x
+                                    special_type_slot_1 = fuel_tanks_small
+                                    special_type_slot_2 = fuel_tanks_small
+                    special_type_slot_3 = empty
+                                }
+                        }
+                    }
+                }
+        }
+    USA_heavy_fighter = {
+            # icon = generic_operation
+            allowed = {
+            }
+            fire_only_once = no
+            cost = 0
+            ai_will_do = {
+                factor = 0
+            }
+            visible = {
+                    tag  = USA
+            }
+
+            available = {
+                        tag = USA
+		        has_tech = improved_medium_airframe
+            }
+            complete_effect = {
+                ROOT = {
+                    create_equipment_variant = {
+                        name = "Heavy fighter 2 engine 2 base 1938"
+                        type = medium_plane_fighter_airframe_2
+                        parent_version = 0
+                        modules = {
+                                fixed_main_weapon_slot = light_mg_2x
+                                fixed_auxiliary_weapon_slot_1 = empty
+                                fixed_auxiliary_weapon_slot_2 = empty
+                                fixed_auxiliary_weapon_slot_3 = empty
+                                engine_type_slot = engine_2_2x
+                                special_type_slot_1 = empty
+                                special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+                            }
+                    }
+                }
+            }
+    }
+
+
+USA_heavy_fighter_1 = {
+            # icon = generic_operation
+            allowed = {
+            }
+            fire_only_once = no
+            cost = 0
+            ai_will_do = {
+                factor = 0
+            }
+            visible = {
+                    tag  = USA
+            }
+
+            available = {
+                        tag = USA
+		        has_tech = improved_medium_airframe
+                        has_tech = engines_3
+                        has_tech = aa_cannon_1
+            }
+            complete_effect = {
+                ROOT = {
+                    create_equipment_variant = {
+                        name = "Heavy fighter 2 engine 3 base 1939"
+                        type = medium_plane_fighter_airframe_2
+                        parent_version = 0
+                        modules = {
+                                fixed_main_weapon_slot = aircraft_cannon_1_2x
+                                fixed_auxiliary_weapon_slot_1 = empty
+                                fixed_auxiliary_weapon_slot_2 = empty
+                                fixed_auxiliary_weapon_slot_3 = empty
+                                engine_type_slot = engine_3_2x
+                                special_type_slot_1 = empty
+                                special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+                            }
+                    }
+                }
+            }
+    }
+
+
+USA_heavy_fighter_2 = {
+            # icon = generic_operation
+            allowed = {
+            }
+            fire_only_once = no
+            cost = 0
+            ai_will_do = {
+                factor = 0
+            }
+            visible = {
+                    tag  = USA
+            }
+
+            available = {
+                        tag = USA
+		        has_tech = improved_medium_airframe
+                        has_tech = engines_3
+			has_tech = survivability_studies
+                        has_tech = aa_cannon_1
+            }
+            complete_effect = {
+                ROOT = {
+                    create_equipment_variant = {
+                        name = "Heavy fighter 2 final 1939"
+                        type = medium_plane_fighter_airframe_2
+                        parent_version = 0
+                        modules = {
+                                fixed_main_weapon_slot = aircraft_cannon_1_2x
+                                fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+                                fixed_auxiliary_weapon_slot_2 = aircraft_cannon_1_2x
+                                fixed_auxiliary_weapon_slot_3 = aircraft_cannon_1_2x
+                                engine_type_slot = engine_3_2x
+                                special_type_slot_1 = self_sealing_fuel_tanks_medium
+                                special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+                            }
+                    }
+                }
+            }
+    }
+
+
+USA_heavy_fighter_3 = {
+            # icon = generic_operation
+            allowed = {
+            }
+            fire_only_once = no
+            cost = 0
+            ai_will_do = {
+                factor = 0
+            }
+            visible = {
+                    tag  = USA
+            }
+
+            available = {
+                        tag = USA
+		        has_tech = advanced_medium_airframe
+                        has_tech = engines_3
+            }
+            complete_effect = {
+                ROOT = {
+                    create_equipment_variant = {
+                        name = "Heavy fighter 3 final 30 mils"
+                        type = medium_plane_fighter_airframe_3
+                        parent_version = 0
+                        modules = {
+                                fixed_main_weapon_slot = light_mg_2x
+                                fixed_auxiliary_weapon_slot_1 = empty
+                                fixed_auxiliary_weapon_slot_2 = empty
+                                fixed_auxiliary_weapon_slot_3 = empty
+                                fixed_auxiliary_weapon_slot_4 = empty
+                                engine_type_slot = engine_3_2x
+                                special_type_slot_1 = empty
+                                special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+                            }
+                    }
+                }
+            }
+    }
+
+USA_heavy_fighter_4 = {
+            # icon = generic_operation
+            allowed = {
+            }
+            fire_only_once = no
+            cost = 0
+            ai_will_do = {
+                factor = 0
+            }
+            visible = {
+                    tag  = USA
+            }
+
+            available = {
+                        tag = USA
+		        has_tech = advanced_medium_airframe
+                        has_tech = engines_3
+			has_tech = survivability_studies
+            }
+            complete_effect = {
+                ROOT = {
+                    create_equipment_variant = {
+                        name = "Heavy fighter 3 base 70 mils"
+                        type = medium_plane_fighter_airframe_3
+                        parent_version = 0
+                        modules = {
+                                fixed_main_weapon_slot = light_mg_2x
+                                fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+                                fixed_auxiliary_weapon_slot_2 = aircraft_cannon_1_2x
+                                fixed_auxiliary_weapon_slot_3 = aircraft_cannon_1_2x
+                                fixed_auxiliary_weapon_slot_4 = light_mg_4x
+                                engine_type_slot = engine_3_2x
+                                special_type_slot_1 = self_sealing_fuel_tanks_medium
+                                special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+                            }
+                    }
+                }
+            }
+    }
+
+USA_strategic_bomber = {
+            # icon = generic_operation
+            allowed = {
+            }
+            fire_only_once = no
+            cost = 0
+            ai_will_do = {
+                factor = 0
+            }
+            visible = {
+                    tag  = USA
+            }
+
+            available = {
+                        tag = USA
+		        has_tech = basic_large_airframe
+            }
+            complete_effect = {
+                ROOT = {
+                    create_equipment_variant = {
+                        name = "Strategic bomber 1938"
+                        type = large_plane_airframe_1
+                        parent_version = 0
+                        modules = {
+                                fixed_main_weapon_slot = large_bomb_bay
+                                fixed_auxiliary_weapon_slot_1 = large_bomb_bay
+                                fixed_auxiliary_weapon_slot_2 = large_bomb_bay
+                                fixed_auxiliary_weapon_slot_3 = empty
+                                engine_type_slot = engine_2_6x
+                                special_type_slot_1 = bomb_sights_1
+                                special_type_slot_2 = lmg_defense_turret_2x
+                                special_type_slot_3 = lmg_defense_turret_2x
+                                special_type_slot_4 = lmg_defense_turret_2x
+                                special_type_slot_5 = lmg_defense_turret_1x
+                            }
+                    }
+                }
+            }
+    }
+
+USA_strategic_bomber_1 = {
+            # icon = generic_operation
+            allowed = {
+            }
+            fire_only_once = no
+            cost = 0
+            ai_will_do = {
+                factor = 0
+            }
+            visible = {
+                    tag  = USA
+            }
+
+            available = {
+                        tag = USA
+		                has_tech = basic_large_airframe
+                        has_tech = engines_3
+			            has_tech = survivability_studies
+            }
+            complete_effect = {
+                ROOT = {
+                    create_equipment_variant = {
+                        name = "Strategic bomber final 1939 4 mils"
+                        type = large_plane_airframe_1
+                        parent_version = 0
+                        modules = {
+                                fixed_main_weapon_slot = large_bomb_bay
+                                fixed_auxiliary_weapon_slot_1 = large_bomb_bay
+                                fixed_auxiliary_weapon_slot_2 = large_bomb_bay
+                                fixed_auxiliary_weapon_slot_3 = empty
+                                engine_type_slot = engine_3_4x
+                                special_type_slot_1 = bomb_sights_1
+                                special_type_slot_2 = radio_navigation_1
+                                special_type_slot_3 = self_sealing_fuel_tanks_large
+                                special_type_slot_4 = lmg_defense_turret_2x
+                                special_type_slot_5 = lmg_defense_turret_2x
+                        }
+                    }
+                }
+            }
+        }   
+
+USA_strategic_bomber_2 = {
+            # icon = generic_operation
+            allowed = {
+            }
+            fire_only_once = no
+            cost = 0
+            ai_will_do = {
+                factor = 0
+            }
+            visible = {
+                    tag  = USA
+            }
+
+            available = {
+                        tag = USA
+		        has_tech = basic_large_airframe
+                        has_tech = engines_3
+            }
+            complete_effect = {
+                ROOT = {
+                    create_equipment_variant = {
+                        name = "Strategic bomber base 1939 13 mils"
+                        type = large_plane_airframe_1
+                        parent_version = 0
+                        modules = {
+                                fixed_main_weapon_slot = large_bomb_bay
+                                fixed_auxiliary_weapon_slot_1 = empty
+                                fixed_auxiliary_weapon_slot_2 = empty
+                                fixed_auxiliary_weapon_slot_3 = empty
+                                engine_type_slot = engine_3_4x
+                                special_type_slot_1 = empty
+                                special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+				special_type_slot_5 = empty
+                            }
+                    }
+                }
+            }
+        }
+      
 }
