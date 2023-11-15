@@ -54,17 +54,23 @@ victory_requierements = {
 	}
 	if = {
 		limit = { 
-			check_variable = { AXIS_VIC < 7 }
+			check_variable = { AXIS_VIC = 6 }
 		}
-		set_global_flag = { flag = AXIS_VIC value = 0 }
+		set_global_flag = { flag = AXIS_VIC value = 2 }
 		every_country = {
 			limit = {
 				is_playable_country = yes
 			}
 			add_ideas = {
-				victory_con
+				victory_con_Axis
 			}
 		}			
+	}
+	if = {
+		limit = { 
+			check_variable = { AXIS_VIC < 6 }
+		}
+		set_global_flag = { flag = AXIS_VIC value = 0 }			
 	}
 	if = {
 		limit = { 
@@ -90,9 +96,28 @@ victory_requierements = {
 	}
 	if = {
 		limit = { 
-			check_variable = { ALLIES_VIC < 7 }
+			check_variable = { ALLIES_VIC = 6 }
+		}
+		set_global_flag = { flag = ALLIES_VIC value = 2 }
+		every_country = {
+			limit = {
+				is_playable_country = yes
+			}
+			add_ideas = {
+				victory_con_Allies
+			}
+		}			
+	}
+	if = {
+		limit = { 
+			check_variable = { ALLIES_VIC < 6 }
 		}
 		set_global_flag = { flag = ALLIES_VIC value = 0 }
+	}
+	if = {
+		limit = { 
+			check_variable = { ALLIES_VIC = 5 }
+		}
 		every_country = {
 			limit = {
 				is_playable_country = yes

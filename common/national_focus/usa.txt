@@ -2099,6 +2099,9 @@ focus = {
 				category = air_doctrine
 			} # REVISIT May use modifier?
 			add_ideas = air_war_plans_division_focus
+			hidden_effect = {
+				add_ideas = air_war_plans_division_focus_hidden
+			}
 		}
 	}
 
@@ -2119,6 +2122,9 @@ focus = {
 		completion_reward = {
 			air_experience = 25
 			add_ideas = air_support_focus
+			hidden_effect = {
+				add_ideas = air_support_focus_hidden
+			}
 		}
 	}
 

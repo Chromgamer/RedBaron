@@ -1420,6 +1420,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = british_fighter_discount
+			hidden_effect={
+				add_ideas = british_fighter_discount_hidden
+			}
 		}
 	}
 	focus = {
