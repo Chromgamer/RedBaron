@@ -9,7 +9,10 @@
  OBSERVER_DELAYED:0 ""
  WHITEPEACE:0 "§HWhitepeace§!\nCountry will be whitepeaced with every enemy\n\n"
  WHITEPEACE_DELAYED:0 ""
-  
+
+ HOTJOIN:0 "§HHotjoin§!\nGives every Country a Event to disable Conversion"
+ HOTJOIN_DELAYED:0 ""
+
  CLEAR_ALL_MARKINGS:0 "§HClear All Marks§!\nEvery mark on world will be removed\n\n"
  CLEAR_ALL_MARKINGS_DELAYED:0 ""
 

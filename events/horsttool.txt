@@ -59,3 +59,14 @@ news_event = {
 		clear_variable=this.target_country
 	}
 }
+news_event = {
+	id = horsttool.6
+	title = "Hotjoin"
+	desc = "Everybody needs to disable their current Conversion Line to keep the MIO apllied during Hotjoin"
+	picture = GFX_news_event_001
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = "I am not AFK"
+	}
+}

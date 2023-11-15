@@ -45,6 +45,10 @@ scripted_gui = {
 					}
 				}
 			}
+				hotjoin_click  = {owner={news_event = { id = horsttool.6 } 
+
+				}
+			}
 
 				clear_all_markings_click = {
 					ROOT = {

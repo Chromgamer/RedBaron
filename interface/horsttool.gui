@@ -81,6 +81,15 @@ guiTypes = {
 			#scale = 0.95
 		}
 		buttonType = {
+			name = "hotjoin"	
+			position = {x=180 y=200}
+			spriteType = "GFX_decision_eng_trade_unions_support"
+					scale=1.6
+			pdx_tooltip = "HOTJOIN"
+			pdx_tooltip_delayed = "HOTJOIN_DELAYED"
+			#scale = 0.95
+		}
+		buttonType = {
 			name = "award_states" 
 			position = {x=250 y=190}	
 			spriteType = "GFX_global_diplorequest_icons"
