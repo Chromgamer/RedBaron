@@ -65,15 +65,15 @@ allied_engine_bonus = {
 	name = "Allied Engine Bonus"
 	group = "elwolfmod Rules"
 	icon = "GFX_decision_hol_war_on_pacifism"
-	option = {
-		name = off
-		text = "ROff"
-		desc = "No Allied engine bonus (Not Reccomended)"
-	}
 	default = {
+		name = off
+		text = "GOff"
+		desc = "No Allied engine bonus (Reccomended)"
+	}
+	opti = {
 		name = on
-		text = "GOn"
-		desc = "USA and UK and get a 100% research boost to engine 4 (Reccomended)"
+		text = "ROn"
+		desc = "USA and UK and get a 100% research boost to engine 4 (Not Reccomended)"
 	}
 }
 
@@ -107,15 +107,15 @@ german_anti_tank_bonus = {
 	name = "German Anti-Tank Research Bonuses"
 	group = "elwolfmod Rules"
 	icon = "GFX_decision_generic_army_support"
-	option = {
-		name = off
-		text = "ROff"
-		desc = "No German Anti-Tank bonuses (Not Reccomended)"
-	}
 	default = {
+		name = off
+		text = "GOff"
+		desc = "No German Anti-Tank bonuses (Reccomended)"
+	}
+	option = {
 		name = on
-		text = "GOn"
-		desc = "Germany has a decision to give them 2 Anti-Tank 100% research bonuses (Reccomended)"
+		text = "ROn"
+		desc = "Germany has a decision to give them 2 Anti-Tank 100% research bonuses (Not Reccomended)"
 	}
 }
 
@@ -155,14 +155,14 @@ max_submarine_tech = {
 	name = "Max Submarine Tech"
 	group = "elwolfmod Rules"
 	icon = "GFX_decision_generic_research"
-	default = {
+	option = {
 		name = sub2
-		text = "G1936"
+		text = "R1936"
 		desc = "Submarine 3 and Snorkel 1 banned (Reccomended)"
 	}
-	option = {
+	default = {
 		name = sub3
-		text = "R1940"
+		text = "G1940"
 		desc = "Submarine 3 and Snorkel 1 allowed (Not Reccomended)"
 	}
 	option = {

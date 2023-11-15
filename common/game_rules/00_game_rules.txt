@@ -45,7 +45,7 @@ allow_release_nations = {
 	name = "RULE_ALLOW_RELEASE_NATIONS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
 	icon = "GFX_release_nations"
-	default = {
+	option = {
 		name = "FREE"
 		text = RULE_OPTION_FREE
 		desc = "RULE_ALLOW_RELEASE_NATIONS_FREE_DESC"
@@ -55,7 +55,7 @@ allow_release_nations = {
 		text = "RULE_OPTION_PEACE_ONLY"
 		desc = "RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_DESC"
 	}
-	option = {
+	default = {
 		name = "BLOCKED"
 		text = RULE_OPTION_BLOCKED
 		desc = "RULE_ALLOW_RELEASE_NATIONS_BLOCKED_DESC"
@@ -308,7 +308,7 @@ allow_paratroopers = {
 		text = "RULE_OPTION_ALLOWED"
 		desc = "RULE_ALLOW_PARATROOPERS_ALLOWED_DESC"
 	}
-	option = {
+	default = {
 		name = no
 		text = "RULE_OPTION_BLOCKED"
 		desc = "RULE_ALLOW_PARATROOPERS_BLOCKED_DESC"
@@ -395,7 +395,7 @@ maximum_fort_level = {
 		text = "RULE_OPTION_4"
 		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
 	}
-	option = {
+	default = {
 		name = level_5
 		text = "RULE_OPTION_5"
 		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
@@ -431,7 +431,7 @@ allow_scorched_earth = {
 		text = "RULE_OPTION_ALLOWED"
 		desc = "RULE_ALLOW_SCORCHED_EARTH_ALLOWED_DESC"
 	}
-	option = {
+	default = {
 		name = no
 		text = "RULE_OPTION_BLOCKED"
 		desc = "RULE_ALLOW_SCORCHED_EARTH_BLOCKED_DESC"
