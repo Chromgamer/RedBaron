@@ -27,8 +27,7 @@ on_actions = {
 
 	on_startup = { 
 		effect = {
-			set_global_flag = { flag = AXIS_VIC value = 0 }
-			set_global_flag = { flag = ALLIES_VIC value = 0} 
+			set_global_flag = { flag = VIC value = 0 }
 			ARG = {
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_0

@@ -1,7 +1,7 @@
 ideas = {
 
 	country = {
-		looming_axis_victory = {
+		victory_con_axis_2 = {
 			allowed = {
 				always = no
 			}
@@ -19,51 +19,20 @@ ideas = {
             on_remove = {
                 if = {
                     limit = {
-                        has_global_flag = { flag = AXIS_VIC value = 1 }
+                        has_global_flag = { flag = VIC value = 1 }
                     }
                     GER = {news_event = { id = redbaron.1 } }
                 }
             }
             cancel = { 
-                OR = {
-                	has_global_flag = { flag = AXIS_VIC value = 0 }
-					has_global_flag = { flag = AXIS_VIC value = 2 }
+                NOT = {
+                	has_global_flag = { flag = VIC value = 1 }
 				}
             }
 
         }
-		looming_allies_defeat = {
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-			
-			allowed_civil_war = {
-				always = yes
-			}
 
-            picture = generic_morale_bonus
-						
-			modifier = {
-
-			}
-
-            on_remove = {
-                if = {
-                    limit = {
-                        has_global_flag = { flag = AXIS_VIC value = 1 }
-                    }
-                }
-            }
-            cancel = { 
-                OR = {
-                	has_global_flag = { flag = AXIS_VIC value = 0 }
-					has_global_flag = { flag = AXIS_VIC value = 2 }
-				}
-            }	
-		}
-
-        looming_allies_victory = {
+        victory_con_allies_2 = {
 			allowed = {
 				always = no
 			}
@@ -81,49 +50,17 @@ ideas = {
             on_remove = {
                 if = {
                     limit = {
-                        has_global_flag = { flag = ALLIES_VIC value = 1 }
+                        has_global_flag = { flag = VIC value = 4 }
                     }
                     GER = {news_event = { id = redbaron.2 } }
                 }
             }
             cancel = { 
-				OR = {
-                	has_global_flag = { flag = ALLIES_VIC value = 0 }
-					has_global_flag = { flag = ALLIES_VIC value = 2 }
+				NOT = {
+                	has_global_flag = { flag = VIC value = 4 }
 				}
             }	
         }
-		looming_axis_defeat = {
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-			
-			allowed_civil_war = {
-				always = yes
-			}
-
-            picture = generic_morale_bonus
-						
-			modifier = {
-
-			}
-
-            on_remove = {
-                if = {
-                    limit = {
-                        has_global_flag = { flag = ALLIES_VIC value = 1 }
-                    }
-                }
-            }
-            cancel = { 
-				OR = {
-					has_global_flag = { flag = ALLIES_VIC value = 0 }
-					has_global_flag = { flag = ALLIES_VIC value = 2 }
-				}
-            }	    
-
-		}
         victory_con = {
 			allowed = {
 				always = no
@@ -143,15 +80,12 @@ ideas = {
             on_remove = {
             }
             cancel = { 
-                Or = {
-                        has_global_flag = { flag = ALLIES_VIC value = 1 }
-                        has_global_flag = { flag = AXIS_VIC value = 1 }
-						has_global_flag = { flag = ALLIES_VIC value = 2 }
-                        has_global_flag = { flag = AXIS_VIC value = 2 }
-                    }
+                NOT = {
+                	has_global_flag = { flag = VIC value = 0 }
+				}
             }	    
     	}
-		victory_con_Axis = {
+		victory_con_axis_1 = {
 			allowed = {
 				always = no
 			}
@@ -170,13 +104,12 @@ ideas = {
             on_remove = {
             }
             cancel = { 
-                Or = {
-                        has_global_flag = { flag = AXIS_VIC value = 1 }
-                        has_global_flag = { flag = AXIS_VIC value = 0 }
-                    }
+                NOT = {
+                	has_global_flag = { flag = VIC value = 2 }
+				}
             }	    
     	}
-		victory_con_Allies = {
+		victory_con_allies_1 = {
 			allowed = {
 				always = no
 			}
@@ -195,10 +128,9 @@ ideas = {
             on_remove = {
             }
             cancel = { 
-                Or = {
-                        has_global_flag = { flag = ALLIES_VIC value = 1 }
-						has_global_flag = { flag = ALLIES_VIC value = 0 }
-                    }
+                NOT = {
+                	has_global_flag = { flag = VIC value = 3 }
+				}
             }	    
     	}
     }

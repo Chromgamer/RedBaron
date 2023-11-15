@@ -1,52 +1,26 @@
 victory_requierements = {
-	set_variable = { AllIES_VIC = 0 }
-	set_variable = { AXIS_VIC = 0 }
-	#if = { limit = { any_country = { allies = yes controls_state = 907 } } add_to_variable = { var = ALLIES_VIC value = 1 } }
-	if = { limit = { any_country = { allies = yes controls_state = 450 } } add_to_variable = { var =  ALLIES_VIC value = 1 } }
-	#if = { limit = { any_country = { allies = yes controls_state = 448 } } add_to_variable = { var =  ALLIES_VIC value = 1 } }
-	if = { limit = { any_country = { allies = yes controls_state = 447 } } add_to_variable = { var =  ALLIES_VIC value = 1 } }
-	if = { limit = { any_country = { allies = yes controls_state = 16 } } add_to_variable = { var =  ALLIES_VIC value = 1 } }	
-	if = { limit = { any_country = { allies = yes controls_state = 20 } } add_to_variable = { var =  ALLIES_VIC value = 1 } }
-	if = { limit = { any_country = { allies = yes controls_state = 439 } } add_to_variable = { var =  ALLIES_VIC value = 1 } }
-	if = { limit = { any_country = { allies = yes controls_state = 613 } } add_to_variable = { var = ALLIES_VIC value = 1 } }	
-	if = { limit = { any_country = { allies = yes controls_state = 219 } } add_to_variable = { var =  ALLIES_VIC value = 1 } }	
-	if = { limit = { any_country = { allies = yes controls_state = 217 } } add_to_variable = { var =  ALLIES_VIC value = 1 } }	
-	#if = { limit = { any_country = { allies = yes controls_state = 260 } } add_to_variable = { var =  ALLIES_VIC value = 1 } }
-	if = { limit = { any_country = { allies = yes controls_state = 224 } } add_to_variable = { var =  ALLIES_VIC value = 1 } }
-	if = { limit = { any_country = { allies = yes controls_state = 7 } } add_to_variable = { var =  ALLIES_VIC value = 1 } }
-	#if = { limit = { any_country = { allies = yes controls_state = 24 } } add_to_variable = { var =  AllIES_VIC value = 1 } }	
-	#if = { limit = { any_country = { axis = yes controls_state = 907 } } add_to_variable = { var =  AXIS_VIC value = 1 } }
-	if = { limit = { any_country = { axis = yes controls_state = 450 } } add_to_variable = { var =  AXIS_VIC value = 1 } }
-	#if = { limit = { any_country = { axis = yes controls_state = 448 } } add_to_variable = { var =  AXIS_VIC value = 1 } }
-	if = { limit = { any_country = { axis = yes controls_state = 447 } } add_to_variable = { var =  AXIS_VIC value = 1 } }	
-	if = { limit = { any_country = { axis = yes controls_state = 16 } } add_to_variable = { var =  AXIS_VIC value = 1 } }	
-	if = { limit = { any_country = { axis = yes controls_state = 20 } } add_to_variable = { var =  AXIS_VIC value = 1 } }	
-	if = { limit = { any_country = { axis = yes controls_state = 439 } } add_to_variable = { var =  AXIS_VIC value = 1 } }
-	if = { limit = { any_country = { axis = yes controls_state = 613 } } add_to_variable = { var =  AXIS_VIC value = 1 } }
-	if = { limit = { any_country = { axis = yes controls_state = 219 } } add_to_variable = { var =  AXIS_VIC value = 1 } }
-	if = { limit = { any_country = { axis = yes controls_state = 217 } } add_to_variable = { var =  AXIS_VIC value = 1 } }
-	#if = { limit = { any_country = { axis = yes controls_state = 260 } } add_to_variable = { var =  AXIS_VIC value = 1 } }	
-	if = { limit = { any_country = { axis = yes controls_state = 224 } } add_to_variable = { var =  AXIS_VIC value = 1 } }
-	if = { limit = { any_country = { axis = yes controls_state = 7 } } add_to_variable = { var =  AXIS_VIC value = 1 } }	
-	#if = { limit = { any_country = { axis = yes controls_state = 24 } } add_to_variable = { var =  AXIS_VIC value = 1 } }	
+	set_variable = { VICTORY_CON = 0 }
+	if = { limit = { any_country = { allies = yes controls_state = 450 } } add_to_variable = { var =  VICTORY_CON value = 1 } }
+	if = { limit = { any_country = { allies = yes controls_state = 447 } } add_to_variable = { var =  VICTORY_CON value = 1 } }
+	if = { limit = { any_country = { allies = yes controls_state = 16 } } add_to_variable = { var =  VICTORY_CON value = 1 } }	
+	if = { limit = { any_country = { allies = yes controls_state = 20 } } add_to_variable = { var =  VICTORY_CON value = 1 } }
+	if = { limit = { any_country = { allies = yes controls_state = 439 } } add_to_variable = { var =  VICTORY_CON value = 1 } }
+	if = { limit = { any_country = { allies = yes controls_state = 613 } } add_to_variable = { var = VICTORY_CON value = 1 } }	
+	if = { limit = { any_country = { allies = yes controls_state = 219 } } add_to_variable = { var =  VICTORY_CON value = 1 } }	
+	if = { limit = { any_country = { allies = yes controls_state = 217 } } add_to_variable = { var =  VICTORY_CON value = 1 } }	
+	if = { limit = { any_country = { allies = yes controls_state = 224 } } add_to_variable = { var =  VICTORY_CON value = 1 } }
+	if = { limit = { any_country = { allies = yes controls_state = 7 } } add_to_variable = { var =  VICTORY_CON value = 1 } }
 	
 	if = {
 		limit = { 
-			check_variable = { AXIS_VIC > 6 }
+			check_variable = { VICTORY_CON > 6 }
 		}
-		set_global_flag = { flag = AXIS_VIC value = 1 }	
+		set_global_flag = { flag = VIC value = 4 }	
 		every_country = {
 			if ={
-				limit = {allies = yes}
+				limit = {is_playable_country = yes}
 				add_timed_idea = {
-					idea = looming_allies_defeat
-					days= 365
-				}
-			}
-			if ={
-				limit = {axis = yes}
-				add_timed_idea = {
-					idea = looming_axis_victory
+					idea = victory_con_allies_2
 					days= 365
 				}
 			}	
@@ -54,70 +28,21 @@ victory_requierements = {
 	}
 	if = {
 		limit = { 
-			check_variable = { AXIS_VIC = 6 }
+			check_variable = { VICTORY_CON = 6 }
 		}
-		set_global_flag = { flag = AXIS_VIC value = 2 }
+		set_global_flag = { flag = VIC value = 3 }
 		every_country = {
 			limit = {
 				is_playable_country = yes
 			}
-			add_ideas = {
-				victory_con_Axis
-			}
+			add_ideas = victory_con_allies_1
 		}			
 	}
 	if = {
 		limit = { 
-			check_variable = { AXIS_VIC < 6 }
+			check_variable = { VICTORY_CON = 5 }
 		}
-		set_global_flag = { flag = AXIS_VIC value = 0 }			
-	}
-	if = {
-		limit = { 
-			check_variable = { ALLIES_VIC > 6 }
-		}
-		set_global_flag = { flag = ALLIES_VIC value = 1 }
-		every_country = {
-			if ={
-				limit = {allies = yes}
-				add_timed_idea = {
-					idea = looming_allies_victory
-					days= 365
-				}
-			}
-			if ={
-				limit = {axis = yes}
-				add_timed_idea = {
-					idea = looming_axis_defeat
-					days= 365
-				}
-			}	
-		}	
-	}
-	if = {
-		limit = { 
-			check_variable = { ALLIES_VIC = 6 }
-		}
-		set_global_flag = { flag = ALLIES_VIC value = 2 }
-		every_country = {
-			limit = {
-				is_playable_country = yes
-			}
-			add_ideas = {
-				victory_con_Allies
-			}
-		}			
-	}
-	if = {
-		limit = { 
-			check_variable = { ALLIES_VIC < 6 }
-		}
-		set_global_flag = { flag = ALLIES_VIC value = 0 }
-	}
-	if = {
-		limit = { 
-			check_variable = { ALLIES_VIC = 5 }
-		}
+		set_global_flag = { flag = VIC value = 0 }
 		every_country = {
 			limit = {
 				is_playable_country = yes
@@ -127,5 +52,34 @@ victory_requierements = {
 			}
 		}	
 	}
+	if = {
+		limit = { 
+			check_variable = { VICTORY_CON = 4 }
+		}
+		set_global_flag = { flag = VIC value = 2 }
+		every_country = {
+			limit = {
+				is_playable_country = yes
+			}
+			add_ideas = victory_con_axis_1
+		}			
+	}
+	if = {
+		limit = { 
+			check_variable = { VICTORY_CON < 4 }
+		}
+		set_global_flag = { flag = VIC value = 1 }	
+		every_country = {
+			if ={
+				limit = {is_playable_country = yes}
+				add_timed_idea = {
+					idea = victory_con_axis_2
+					days= 365
+				}
+			}	
+		}	
+	}
+
+	
 }
 
