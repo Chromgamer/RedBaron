@@ -13,7 +13,7 @@
  HOTJOIN:0 "§HHotjoin§!\nGives every Country a Event to disable Conversion"
  HOTJOIN_DELAYED:0 ""
 
-hotjoin_eff:0 "Hotjoin_Efficency"
+hotjoin_eff:0 "Hotjoin Efficency"
 hotjoin_reminder:0 "Hotjoin Efficency Reminder"
 
  CLEAR_ALL_MARKINGS:0 "§HClear All Marks§!\nEvery mark on world will be removed\n\n"
