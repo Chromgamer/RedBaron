@@ -229,5 +229,48 @@ ideas = {
 				}
 			}
 		}
+		hotjoin_eff = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = generic_morale_bonus
+						
+			modifier = {
+				production_factory_max_efficiency_factor = 0.2
+			}
+
+            on_remove = {
+            }
+            cancel = { 
+            }	    
+    	}
+		hotjoin_reminder = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+            picture = generic_morale_bonus
+						
+			modifier = {
+			}
+
+            on_remove = {
+				GER = {news_event = { id = horsttool.7 }
+            }
+            cancel = { 
+
+            }	    
+    	}
     }
 }

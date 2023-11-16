@@ -45,9 +45,23 @@ scripted_gui = {
 					}
 				}
 			}
-				hotjoin_click  = {owner={news_event = { id = horsttool.6 } 
-
-				}
+				hotjoin_click  = {
+								owner={
+									news_event = { id = horsttool.6 } 
+									add_timed_idea = {
+											idea = hotjoin_reminder
+											days= 5
+										}
+								}
+								every_country = {
+									if ={
+										limit = {is_playable_country = yes}
+										add_timed_idea = {
+											idea = hotjoin_eff
+											days= 10
+										}
+									}
+								}	
 			}
 
 				clear_all_markings_click = {
