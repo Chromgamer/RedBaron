@@ -14,3 +14,19 @@ Naval_treaty = {
 	}
 }
 
+Less_Minors = {
+	name = "Less Minors"
+	group = "elwolfmod Rules"
+	icon = "GFX_decision_eng_trade_unions_support"
+	default = {
+		name = off
+		text = "GOff"
+		desc = "Finland and Brasil exist"
+	}
+	option = {
+		name = on
+		text = "ROn"
+		desc = "Finland and Brasil removed"
+	}
+}
+

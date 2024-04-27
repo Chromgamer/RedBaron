@@ -99,54 +99,6 @@ operations = {
             }
 
         }
-		annex_Argentina = {
-            # icon = generic_operation
-            allowed = {
-                tag = ROM
-            }
-            fire_only_once = yes
-            cost = 0
-            ai_will_do = {
-                factor = 0
-            }
-            available = {
-                ARG = {
-                    is_ai = yes
-                }
-            }
-            targets = {
-                ARG
-            }
-            complete_effect = {
-                ARG = {
-                    transfer_units_fraction = {
-                        target = ROM
-                        size = 1
-                        stockpile_ratio = 1
-                        army_ratio = 1
-                        navy_ratio = 1
-                        air_ratio = 1
-                        keep_unit_leaders_trigger = {
-                            always = no
-                        }
-                    }
-                }
-                ROM = {
-                    annex_country = {
-                        target = ARG
-                        transfer_troops = yes
-                    }
-                }
-                every_state = {
-                    limit = {
-                        is_core_of = ARG
-                        is_controlled_by = ROM
-                    }
-                    add_core_of = ROM
-                }
-            }
-
-        }
 	 annex_Irak = {
             # icon = generic_operation
             allowed = {
@@ -235,61 +187,6 @@ operations = {
         }
 }
 Technologies = {
-    hosttool_gun3 = {
-            # icon = generic_operation
-            allowed = {
-            }
-            fire_only_once = no
-            cost = 0
-            ai_will_do = {
-                factor = 0
-            }
-            visible = {
-				OR = {
-                        tag = GER
-                        tag = ITA
-                        tag = HUN
-                        tag = ROM
-                        tag = SPR
-                        tag = BUL
-                        tag = JAP
-                        tag = SIA
-                        tag = MAN
-                        tag = FIN
-                    }
-			}
-            available = {
-                AND = {
-                    date > 1939.09.01
-                    NOT = {country_exists = ARG}
-                    OR = {
-                        tag = GER
-                        tag = ITA
-                        tag = HUN
-                        tag = ROM
-                        tag = SPR
-                        tag = BUL
-                        tag = JAP
-                        tag = SIA
-                        tag = MAN
-                        tag = FIN
-                    }
-                }
-            }
-            complete_effect = {
-                SWE = {
-                    create_production_license = {
-                        target = ROOT
-                        equipment = {
-                            type = infantry_equipment_3
-                            version = 0
-                            new_prioritised = yes
-                        }
-                        cost_factor = 0
-                    }
-                }
-            }
-    }
     hosttool_aa2 = {
             # icon = generic_operation
             allowed = {

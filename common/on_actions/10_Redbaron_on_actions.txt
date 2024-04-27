@@ -10,69 +10,9 @@ on_actions = {
 
 		}
 	}
-	on_war = {
-		effect = {
-				if = {
-					limit = {
-						GER = { has_war_with = POL }
-					}
-					ARG = {
-						add_ideas = SPA_la_division_azul
-						remove_ideas = elwolfmod_novols#
-					}
-				}
-
-			}
-	}
 
 	on_startup = { 
 		effect = {
-			set_global_flag = { flag = VIC value = 0 }
-			ARG = {
-				add_equipment_to_stockpile = {
-					type = infantry_equipment_0
-					amount = 3200
-				}
-			}
-			every_country = {
-				limit = {
-					OR = {
-						tag = GER
-						tag = ITA
-						tag = JAP
-						tag = BUL
-						tag = HUN
-						tag = ROM
-						tag = FIN
-						tag = MAN
-						tag = SIA
-						tag = SPR
-						tag = AUS
-						tag = VIC
-					}
-				}
-					add_operation_token = {
-						tag = ARG
-						token = team_civilian
-					}
-					add_operation_token = {
-						tag = ARG
-						token = team_army
-					}
-					add_operation_token = {
-						tag = ARG
-						token = team_navy
-					}
-					add_operation_token = {
-						tag = ARG
-						token = team_airforce
-					}
-				}
-		}
-		effect = {
-			ARG = {
-			add_ideas = no_faction
-			}
 			SPR = {
 			add_ideas = no_faction
 			}
@@ -89,23 +29,7 @@ on_actions = {
 			}
 
 		}
-		effect = {
-			if = {
-				limit = {
-					ARG = {
-						is_ai = no
-					}
-				}
-				278 = {
-					set_building_level = {
-						type = naval_base
-						level = 7
-						province = 12364
-						instant_build = yes
-					}
-				}
-			}
-		}
+
 	}
 	
 }

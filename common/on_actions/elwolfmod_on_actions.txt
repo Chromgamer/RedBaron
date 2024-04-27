@@ -529,41 +529,6 @@ on_actions = {
 									}
 								}
 							}
-							AND = {
-								tag = ARG
-								OR = {								
-									GER = { 
-										has_volunteers_amount_from = {
-											tag = ROOT
-										} 
-									}
-									HUN = { 
-										has_volunteers_amount_from = {
-											tag = ROOT
-										} 
-									}
-									ITA = { 
-										has_volunteers_amount_from = {
-											tag = ROOT
-										} 
-									}
-									FIN = { 
-										has_volunteers_amount_from = {
-											tag = ROOT
-										} 
-									}
-									ROM = { 
-										has_volunteers_amount_from = {
-											tag = ROOT
-										} 
-									}
-									BUL = { 
-										has_volunteers_amount_from = {
-											tag = ROOT
-										} 
-									}
-								}
-							}
 						}
 					}
 				}
@@ -592,6 +557,26 @@ on_actions = {
 		}
 	}
 	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = Less_Minors
+						option = on
+					}
+				}
+				WST = {
+					annex_country = {
+					target = FIN
+					}
+				}
+				WST = {
+					annex_country = {
+					target = BRA
+					}
+				}
+			}
+		}
 		effect = {
 			every_country = {
 				every_army_leader = {
@@ -2014,4 +1999,5 @@ on_actions = {
 			}
 		}
 	}
-}
+		}
+

@@ -25,7 +25,6 @@ is_playable_country = {
 		original_tag = MEX
 		original_tag = VIC
 		original_tag = PHI
-		original_tag = ARG
 	}
 }
 

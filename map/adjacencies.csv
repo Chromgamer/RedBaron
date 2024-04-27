@@ -209,6 +209,14 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13058;12512;impassable;-1;-1;-1;-1;-1;;Greenland Glacier
 13058;10636;impassable;-1;-1;-1;-1;-1;;Greenland Glacier
 13058;13066;impassable;-1;-1;-1;-1;-1;;Greenland Glacier
+12960;13292;sea;2580;-1;-1;-1;-1;;Falklands
+7683;13293;sea;8642;-1;-1;-1;-1;;Cote Nord
+8198;13295;sea;5473;-1;-1;-1;-1;;Aysen
+13307;13296;sea;9009;-1;-1;-1;-1;;Chubut
+12954;13297;sea;5424;-1;-1;-1;-1;;Araucania
+13312;7982;sea;2919;-1;-1;-1;-1;;South Iran
+761;13315;sea;9092;-1;-1;-1;-1;;Ontario
+13196;13314;sea;9092;-1;-1;-1;-1;;Northern Quebec
 3151;3060;impassable;-1;-1;-1;-1;-1;;Finnland Border
 3151;9150;impassable;-1;-1;-1;-1;-1;;Finnland Border
 149;9150;impassable;-1;-1;-1;-1;-1;;Finnland Border
@@ -244,11 +252,4 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6012;142;impassable;-1;-1;-1;-1;-1;;Finnland Border
 9140;142;impassable;-1;-1;-1;-1;-1;;Finnland Border
 9140;6117;impassable;-1;-1;-1;-1;-1;;Finnland Border
-11007;5178;impassable;-1;-1;-1;-1;-1;;Argentina Border
-11007;12466;impassable;-1;-1;-1;-1;-1;;Argentina Border
-11007;5110;impassable;-1;-1;-1;-1;-1;;Argentina Border
-11007;1585;impassable;-1;-1;-1;-1;-1;;Argentina Border
-8238;1585;impassable;-1;-1;-1;-1;-1;;Argentina Border
-8238;4575;impassable;-1;-1;-1;-1;-1;;Argentina Border
-8187;4575;impassable;-1;-1;-1;-1;-1;;Argentina Border
--1;-1;;-1;-1;-1;-1;-1;-1
+-1;-1;;-1;-1;-1;-1;-1;-1 
