@@ -16,6 +16,7 @@ on_actions = {
 			SPR = {
 			add_ideas = no_faction
 			}
+			set_global_flag = { flag = VIC value = 0 }
 
 		}
 		effect = {
