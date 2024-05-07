@@ -1,3 +1,67 @@
+MOD_countdown_to_victory_cat = {
+	MOD_countdown_to_allied_victory_mission = {
+
+		icon = generic_operation
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		days_mission_timeout = 365
+
+		activation = {
+			check_variable = {
+				global.allies_score > 6
+			}
+		}
+
+		cancel_trigger = {
+			check_variable = {
+				global.allies_score < 7
+			}
+		}
+
+		timeout_effect = {
+			GER = { news_event = { id = redbaron.2 } }
+		}
+		is_good = no
+		complete_effect = {
+
+		}
+	}
+	MOD_countdown_to_axis_victory_mission = {
+
+		icon = generic_operation
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		days_mission_timeout = 365
+
+		activation = {
+			check_variable = {
+				global.axis_score > 6
+			}
+		}
+
+		cancel_trigger = {
+			check_variable = {
+				global.axis_score < 7
+			}
+		}
+
+		timeout_effect = {
+			GER = { news_event = { id = redbaron.1 } }
+		}
+		is_good = no
+		complete_effect = {
+
+		}
+	}
+}
 operations = {
     annex_South_Africa = {
             # icon = generic_operation
@@ -156,7 +220,7 @@ operations = {
                 AND = { IRE = {
                          is_ai = yes
                          }
-                        GER = { has_war_with = POL }
+                         FRA = {has_capitulated = yes}
                 }
                     }
             targets = {
@@ -165,7 +229,7 @@ operations = {
             complete_effect = {
                 IRE = {
                     transfer_units_fraction = {
-                        target = ENG
+                        target = FRA
                         size = 1
                         stockpile_ratio = 1
                         army_ratio = 1
@@ -713,7 +777,7 @@ Technologies = {
             }
     }
 
-USA_heavy_fighter_1 = {
+    USA_heavy_fighter_1 = {
             # icon = generic_operation
             allowed = {
             }
@@ -776,7 +840,7 @@ USA_heavy_fighter_1 = {
     }
 
 
-USA_strategic_bomber = {
+    USA_strategic_bomber = {
             # icon = generic_operation
             allowed = {
             }
@@ -1169,3 +1233,4 @@ USA_strategic_bomber = {
                     }
                 }
         }
+}
