@@ -6,5 +6,5 @@ tags={
 	"Gameplay"
 }
 name="Redbaron"
-supported_version="1.14.5"
+supported_version="1.14.7"
 remote_file_id="3063936836"

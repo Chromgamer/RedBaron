@@ -371,7 +371,7 @@ characters = {
 		}
 
 		corps_commander={
-			traits = {  cavalry_leader armor_officer war_hero panzer_leader trait_engineer infantry_leader trickster organizer desert_fox trait_mountaineer commando }
+			traits = {  cavalry_leader armor_officer war_hero panzer_leader trait_engineer infantry_leader trickster organizer desert_fox trait_mountaineer commando pre_grind}
 			skill=6
 			attack_skill=6
 			defense_skill=6

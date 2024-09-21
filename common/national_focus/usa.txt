@@ -66,13 +66,6 @@ focus_tree = {
 		icon = GFX_focus_generic_self_management
 		x = 4
 		y = 0
-		offset = {
-			x = -12
-			y = 0
-			trigger = {
-				not = { has_dlc = "Man the Guns" }
-			}
-		}
 
 		mutually_exclusive = { focus = USA_reestablish_the_gold_standard }
 		cost = 10
@@ -1198,364 +1191,550 @@ focus = {
 # # # #  # #  #     #    #   #  # #  #   # 
  # #  #  # #  #     #    ### #  # #  # ##  
 
- 	focus = {
-		id = USA_war_plans_division
-		icon = GFX_goal_generic_position_armies
-		x = 14
-		y = 0
-		offset = {
-			x = -26
-			y = 0
-			trigger = {
-				not = { has_dlc = "Man the Guns" }
-			}
-		}
-		
-		cost = 10
+ focus = {
+	id = USA_war_plans_division
+	icon = GFX_goal_generic_position_armies
+	x = 12
+	y = 0
 
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			custom_effect_tooltip = available_chief_of_army
-			show_ideas_tooltip = walter_krueger
-			unlock_decision_category_tooltip = USA_war_plans
-		}
-	}
-	focus = {
-		id = USA_intervention_in_the_americas
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		x = -4
-		y = 1
-		prerequisite = { focus = USA_war_plans_division }
-		relative_position_id = USA_war_plans_division
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_ideas = USA_intervention_in_the_americas
-		}
-	}
-
-	focus = {
-		id = USA_intervention_in_europe
-		icon = GFX_goal_generic_territory_or_war
-		x = 0
-		y = 1
-		prerequisite = { focus = USA_war_plans_division }
-		relative_position_id = USA_war_plans_division
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			add_ideas = USA_intervention_in_europe
-		}
-	}
-	focus = {
-		id = USA_war_plan_silver
-		icon = GFX_focus_attack_italy
-		x = -1
-		y = 1
-		prerequisite = { focus = USA_intervention_in_europe }
-		mutually_exclusive = { }
-		relative_position_id = USA_intervention_in_europe
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
 	
-		available = {
-			
-		}
-			
-		bypass = {
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
 	
-		}
+	bypass = {
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+	}
 
-		completion_reward = {
-			unlock_decision_tooltip = { decision = USA_execute_war_plan_silver show_effect_tooltip = yes show_modifiers = yes }
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		custom_effect_tooltip = available_chief_of_army
+		show_ideas_tooltip = walter_krueger
+		unlock_decision_category_tooltip = USA_war_plans
+	}
+}
+focus = {
+	id = USA_intervention_in_the_americas
+	icon = GFX_goal_generic_occupy_states_ongoing_war
+	x = -4
+	y = 1
+	prerequisite = { focus = USA_war_plans_division }
+	relative_position_id = USA_war_plans_division
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = USA_intervention_in_the_americas
+	}
+}
+
+focus = {
+	id = USA_reinforce_monroe_doctrine
+	icon = GFX_goal_generic_positive_trade_relations
+	x = 0
+	y = 1
+	prerequisite = { focus = USA_intervention_in_the_americas }
+	relative_position_id = USA_intervention_in_the_americas
+	cost = 10
+	ai_will_do = {
+		factor = 2
+	}
+	completion_reward = {
+		custom_effect_tooltip = USA_reinforce_monroe_doctrine_tt
+		unlock_decision_category_tooltip = USA_intervention_mandate
+		hidden_effect = {
+			CUB = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+			HAI = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+			DOM = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+			GUA = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+			ELS = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+			HON = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+			NIC = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+			COS = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+			CAN = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+			MEX = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+			COL = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+			VEN = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+			ECU = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+			PRU = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+			BRA = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+			BOL = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+			PAR = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+			URG = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+			ARG = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+			CHL = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
+			"PAN" = { add_opinion_modifier =  { target = USA modifier = monroe_doctrine_trade } }
 		}
 	}
-	focus = {
-		id = USA_war_plan_black
-		icon = GFX_focus_attack_germany
-		prerequisite = { focus = USA_intervention_in_europe }
-		available = {
-		}
+}
 
-		continue_if_invalid = yes
-		available_if_capitulated = yes
+focus = {
+	id = USA_war_plan_gray
+	icon = GFX_goal_generic_more_territorial_claims
+	x = 0
+	y = 2
+	prerequisite = { focus = USA_reinforce_monroe_doctrine }
+	relative_position_id = USA_intervention_in_the_americas
+	cost = 10
 
-		x = 0
-		y = 2
-		relative_position_id = USA_intervention_in_europe
-		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		completion_reward = {
-			GER = {
-				add_opinion_modifier = { target = USA modifier = war_plan_black }
-			}
-			unlock_decision_tooltip = { decision = USA_execute_war_plan_black show_effect_tooltip = yes show_modifiers = yes }
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		unlock_decision_tooltip = { decision = USA_execute_war_plan_gray show_effect_tooltip = yes show_modifiers = yes } 
+	}
+}
+focus = {
+	id = USA_hemisphere_defense
+	icon = GFX_goal_generic_defence
+	x = 0
+	y = 3
+	prerequisite = { focus = USA_war_plan_gray }
+	relative_position_id = USA_intervention_in_the_americas
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			is_historical_focus_on = yes
+			factor = 0
 		}
 	}
-	focus = {
-		id = USA_destroyers_for_bases
-		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = USA_war_plan_black }
-		available = {
-			country_exists = GER
-			is_subject = no
-			ENG = {
-				NOT = { is_in_faction_with = GER }
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		if = {
+			limit = {
+				is_in_faction = no
 			}
-			ENG = {
-				has_government = ROOT
-				has_war = yes
-				not = { has_war_with = ROOT }
-				any_enemy_country = {
-					is_major = yes
+			create_faction = USA_hemisphere_defense_faction
+		}
+		if = {
+			limit = {
+				is_faction_leader = yes
+			}
+			every_country = {
+				limit = {
+					is_in_faction = no
+					has_government = ROOT
+					not = { has_war_with = ROOT }
+					OR = {
+						original_tag = CUB
+						original_tag = CAN
+						original_tag = MEX
+						original_tag = BRA
+						original_tag = ARG
+						original_tag = URG
+						original_tag = CHL
+						original_tag = "PAN"
+						original_tag = PAR
+						original_tag = VEN
+						original_tag = PRU
+						original_tag = BOL
+						original_tag = COL
+						original_tag = ECU
+						original_tag = HON
+						original_tag = DOM
+						original_tag = HAI
+						original_tag = GUA
+						original_tag = COS
+						original_tag = ELS
+						original_tag = NIC
+					}
 				}
-			}
-		}
-		bypass = {
-			NOT = { 696 = { is_controlled_by = ENG } }
-			NOT = { 331 = { is_controlled_by = ENG } }
-			NOT = { 308 = { is_controlled_by = ENG } } 
-			NOT = { 693 = { is_controlled_by = ENG } } 
-			NOT = { 689 = { is_controlled_by = ENG } } 
-			NOT = { 691 = { is_controlled_by = ENG } } 
-			ENG = { exists = no }
-		}
-
-		x = 0
-		y = 1
-		relative_position_id = USA_war_plan_black
-		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		search_filters = {FOCUS_FILTER_ANNEXATION}
-		completion_reward = {
-			ENG = {
-				custom_effect_tooltip = needs_approval
-				country_event = { id = usa.4 days = 1 }
-			}
-			
-			effect_tooltip = {
-				custom_effect_tooltip = USA_destroyers_for_bases_tt
-				transfer_state = 696
-				transfer_state = 331
-				transfer_state = 308
-				transfer_state = 693
-				transfer_state = 689
-				transfer_state = 691
-				
+				country_event = generic.5
 			}
 		}
 	}
+}
+focus = {
+	id = USA_intervention_in_europe
+	icon = GFX_goal_generic_territory_or_war
+	x = 0
+	y = 1
+	prerequisite = { focus = USA_war_plans_division }
+	relative_position_id = USA_war_plans_division
+	cost = 10
 
-	focus = {
-		id = USA_intervention_in_asia
-		icon = GFX_goal_generic_major_war
-		x = 6
-		y = 1
-		prerequisite = { focus = USA_war_plans_division }
-		relative_position_id = USA_war_plans_division
-		cost = 10
+	ai_will_do = {
+		factor = 1
+	}
 
-		ai_will_do = {
-			factor = 1
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = USA_intervention_in_europe
+		IF = {
+			limit = {
+				has_dlc = "La Resistance"
+			}
+			USA_create_george_musulin_operative = yes
 		}
+	}
+}
 
-		available = {
+focus = {
+	id = USA_war_plan_silver
+	icon = GFX_focus_attack_italy
+	x = -2
+	y = 1
+	prerequisite = { focus = USA_intervention_in_europe }
+	mutually_exclusive = { }
+	relative_position_id = USA_intervention_in_europe
+	cost = 10
 
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+		
+	}
+		
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		IF = {
+			limit = {
+				has_dlc = "La Resistance"
+			}
+			USA_create_joe_savoldi_operative = yes
+		}
+		unlock_decision_tooltip = { decision = USA_execute_war_plan_silver show_effect_tooltip = yes show_modifiers = yes }
+	}
+}
+focus = {
+	id = USA_war_plan_black
+	icon = GFX_focus_attack_germany
+	prerequisite = { focus = USA_intervention_in_europe }
+	available = {
+	}
+
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+
+	x = 0
+	y = 1
+	relative_position_id = USA_intervention_in_europe
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+	completion_reward = {
+		GER = {
+			add_opinion_modifier = { target = USA modifier = war_plan_black }
+		}
+		IF = {
+			limit = {
+				has_dlc = "La Resistance"
+			}
+			USA_create_william_sebold_operative = yes
+		}
+		unlock_decision_tooltip = { decision = USA_execute_war_plan_black show_effect_tooltip = yes show_modifiers = yes }
+	}
+}
+focus = {
+	id = USA_destroyers_for_bases
+	icon = GFX_goal_generic_navy_cruiser
+	prerequisite = { focus = USA_war_plan_black }
+	available = {
+		country_exists = GER
+		is_subject = no
+		ENG = {
+			NOT = { is_in_faction_with = GER }
+		}
+		ENG = {
+			has_government = ROOT
+			has_war = yes
+			not = { has_war_with = ROOT }
+			any_enemy_country = {
+				is_major = yes
+			}
+		}
+	}
+	bypass = {
+		NOT = { 696 = { is_controlled_by = ENG } }
+		NOT = { 331 = { is_controlled_by = ENG } }
+		NOT = { 308 = { is_controlled_by = ENG } } 
+		NOT = { 693 = { is_controlled_by = ENG } } 
+		NOT = { 689 = { is_controlled_by = ENG } } 
+		NOT = { 691 = { is_controlled_by = ENG } } 
+		ENG = { exists = no }
+	}
+
+	x = 0
+	y = 1
+	relative_position_id = USA_war_plan_black
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+	search_filters = {FOCUS_FILTER_ANNEXATION}
+	completion_reward = {
+		ENG = {
+			custom_effect_tooltip = needs_approval
+			country_event = { id = usa.4 days = 1 }
 		}
 		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			show_unit_leaders_tooltip = USA_alexander_vandegrift
-		}
-	}
-	focus = {
-		id = USA_war_plan_orange
-		icon = GFX_focus_attack_japan
-		prerequisite = { focus = USA_intervention_in_asia }
-		available = {
+		effect_tooltip = {
+			custom_effect_tooltip = USA_destroyers_for_bases_tt
+			transfer_state = 696
+			transfer_state = 331
+			transfer_state = 308
+			transfer_state = 693
+			transfer_state = 689
+			transfer_state = 691
 			
 		}
-		continue_if_invalid = yes
-		available_if_capitulated = yes
-
-		x = 0
-		y = 1
-		relative_position_id = USA_intervention_in_asia
-		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
+	}
+}
 
 
-		completion_reward = {
-			JAP = {
-				add_opinion_modifier = { target = USA modifier = war_plan_orange }
-			}
-			unlock_decision_tooltip = { decision = USA_execute_war_plan_orange show_effect_tooltip = yes show_modifiers = yes }
-		}
+focus = {
+	id = USA_intervention_in_asia
+	icon = GFX_goal_generic_major_war
+	x = 3
+	y = 1
+	prerequisite = { focus = USA_war_plans_division }
+	relative_position_id = USA_war_plans_division
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
 	}
 
-	focus = {
-		id = USA_defense_of_the_pacific
-		icon = GFX_goal_generic_occupy_states_coastal
-		prerequisite = { focus = USA_war_plan_orange }
-		available = {
-			JAP = {
-				exists = yes
-				NOT = { has_government = ROOT }
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		show_unit_leaders_tooltip = USA_alexander_vandegrift
+	}
+}
+focus = {
+	id = USA_war_plan_orange
+	icon = GFX_focus_attack_japan
+	prerequisite = { focus = USA_intervention_in_asia }
+	available = {
+		
+	}
+	continue_if_invalid = yes
+	available_if_capitulated = yes
+
+	x = -1
+	y = 1
+	relative_position_id = USA_intervention_in_asia
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+
+
+	completion_reward = {
+		JAP = {
+			add_opinion_modifier = { target = USA modifier = war_plan_orange }
+		}
+		unlock_decision_tooltip = { decision = USA_execute_war_plan_orange show_effect_tooltip = yes show_modifiers = yes }
+	}
+}
+focus = {
+	id = USA_war_plan_yellow
+	icon = GFX_focus_attack_china
+	x = 1
+	y = 1
+	prerequisite = { focus = USA_intervention_in_asia }
+	relative_position_id = USA_intervention_in_asia
+	cost = 10
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		unlock_decision_tooltip = { decision = USA_execute_war_plan_yellow show_effect_tooltip = yes show_modifiers = yes }
+	}
+}
+focus = {
+	id = USA_defense_of_the_pacific
+	icon = GFX_goal_generic_occupy_states_coastal
+	prerequisite = { focus = USA_war_plan_yellow }
+	prerequisite = { focus = USA_war_plan_orange }
+	available = {
+		JAP = {
+			exists = yes
+			NOT = { has_government = ROOT }
+		}
+	}
+	will_lead_to_war_with = JAP
+	x = 0
+	y = 2
+	relative_position_id = USA_intervention_in_asia
+	cost = 10
+	#ai_will_do = {
+	#	factor = 1
+	#}
+	completion_reward = {
+		650 = {
+			#Fortify naval bases
+			add_building_construction = {
+				type = coastal_bunker
+				province = 13067
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = naval_base
+				province = 13067
+				level = 2
+				instant_build = yes
 			}
 		}
-		will_lead_to_war_with = JAP
-		x = 0
-		y = 2
-		relative_position_id = USA_intervention_in_asia
-		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
-		completion_reward = {
-			650 = {
-				#Fortify naval bases
-				add_building_construction = {
-					type = coastal_bunker
-					province = 13067
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = naval_base
-					province = 13067
-					level = 2
-					instant_build = yes
-				}
+		631 = {
+			#Fortify naval bases
+			add_building_construction = {
+				type = coastal_bunker
+				province = 13052
+				level = 2
+				instant_build = yes
 			}
-			631 = {
-				#Fortify naval bases
-				add_building_construction = {
-					type = coastal_bunker
-					province = 13052
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = naval_base
-					province = 13052
-					level = 2
-					instant_build = yes
-				}
+			add_building_construction = {
+				type = naval_base
+				province = 13052
+				level = 2
+				instant_build = yes
 			}
-			632 = {
-				#Fortify naval bases
-				add_building_construction = {
-					type = coastal_bunker
-					province = 13047
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = naval_base
-					province = 13047
-					level = 2
-					instant_build = yes
-				}
+		}
+		632 = {
+			#Fortify naval bases
+			add_building_construction = {
+				type = coastal_bunker
+				province = 13047
+				level = 2
+				instant_build = yes
 			}
-			638 = {
-				#Fortify naval bases
-				add_building_construction = {
-					type = coastal_bunker
-					province = 12140
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = naval_base
-					province = 12140
-					level = 2
-					instant_build = yes
-				}
+			add_building_construction = {
+				type = naval_base
+				province = 13047
+				level = 2
+				instant_build = yes
 			}
-			642 = {
-				#Fortify naval bases
-				add_building_construction = {
-					type = coastal_bunker
-					province = 13050
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = naval_base
-					province = 13050
-					level = 2
-					instant_build = yes
-				}
+		}
+		638 = {
+			#Fortify naval bases
+			add_building_construction = {
+				type = coastal_bunker
+				province = 12140
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = naval_base
+				province = 12140
+				level = 2
+				instant_build = yes
+			}
+		}
+		642 = {
+			#Fortify naval bases
+			add_building_construction = {
+				type = coastal_bunker
+				province = 13050
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = naval_base
+				province = 13050
+				level = 2
+				instant_build = yes
 			}
 		}
 	}
+}
 
 #   #  ##  ###      ###  ### ###   ##  ###  ### #   # ### #  # ### 
 #   # #  # #  #     #  # #   #  # #  # #  #  #  ## ## #   ## #  #  
@@ -1567,15 +1746,9 @@ focus = {
 	focus = {
 		id = USA_war_department
 		icon = GFX_goal_generic_army_doctrines
-		x = 30
+		x = 25
 		y = 0
-		offset = {
-			x = -26
-			y = 0
-			trigger = {
-				not = { has_dlc = "Man the Guns" }
-			}
-		}
+
 		cost = 10
 
 		ai_will_do = {

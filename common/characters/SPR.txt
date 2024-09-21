@@ -607,7 +607,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer harsh_leader trait_SPA_nationalist_sympathies organizer cavalry_leader commando panzer_leader trait_engineer ranger trickster }
+			traits={ career_officer harsh_leader trait_SPA_nationalist_sympathies organizer cavalry_leader commando panzer_leader trait_engineer ranger trickster pre_grind}
 			skill=6
 			attack_skill=6
 			defense_skill=4
@@ -778,7 +778,7 @@ characters={
 			}
 
 			corps_commander={
-				traits={ brilliant_strategist trait_reckless trait_SPA_nationalist_sympathies organizer cavalry_leader panzer_leader trait_engineer ranger trickster }
+				traits={ brilliant_strategist trait_reckless trait_SPA_nationalist_sympathies organizer cavalry_leader panzer_leader trait_engineer ranger trickster pre_grind }
 				skill=6
 				attack_skill=6
 				defense_skill=4
@@ -907,12 +907,12 @@ characters={
 			}
 			
 			corps_commander={
-				traits={ infantry_officer trait_SPA_nationalist_sympathies }
-				skill=3
-				attack_skill=2
-				defense_skill=3
-				planning_skill=3
-				logistics_skill=2
+				traits={ trait_SPA_nationalist_sympathies organizer infantry_leader  trait_engineer trickster pre_grind }
+				skill=6
+				attack_skill=6
+				defense_skill=4
+				planning_skill=5
+				logistics_skill=5
 				legacy_id=1113
 			}
 		}
@@ -1009,12 +1009,12 @@ characters={
 			}
 
 			corps_commander={
-				traits={ trait_SPA_nationalist_sympathies organizer infantry_leader }
-				skill=3
-				attack_skill=3
-				defense_skill=2
-				planning_skill=3
-				logistics_skill=2
+				traits={ trait_SPA_nationalist_sympathies organizer infantry_leader  trait_engineer trickster pre_grind}
+				skill=6
+				attack_skill=6
+				defense_skill=4
+				planning_skill=5
+				logistics_skill=5
 				legacy_id=1114
 				visible = {
 					OR = {

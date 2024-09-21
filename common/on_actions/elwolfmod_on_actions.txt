@@ -575,6 +575,20 @@ on_actions = {
 					target = BRA
 					}
 				}
+				every_state = {
+                    limit = {
+                        is_core_of = FIN 
+                        is_controlled_by = WST
+                    }
+                    add_core_of = WST
+                }
+				every_state = {
+                    limit = {
+                        is_core_of = BRA
+                        is_controlled_by = WST
+                    }
+                    add_core_of = WST
+                }
 			}
 		}
 		effect = {
@@ -591,18 +605,6 @@ on_actions = {
 			ENG = {
 				remove_resource_rights = 676
 				remove_resource_rights = 291
-			}
-			405 = {
-				add_resource = {
-					type = tungsten
-					amount = 112
-				}
-			}
-			790 = {
-				add_resource = {
-					type = tungsten
-					amount = 200
-				}
 			}
 			every_country = {
 				limit = {
@@ -1997,6 +1999,62 @@ on_actions = {
 					amount = 6
 				}
 			}
+			HOL = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 15000
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 15000
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 1000
+					}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 15
+				}
+				}
+				BEL = {
+					add_ideas = grapemod_no_ai
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_0
+						amount = 17500
+					}
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_1
+						amount = 17500
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment_1
+						amount = 1500
+						}
+					add_equipment_to_stockpile = {
+						type = train_equipment
+						amount = 15
+					}
+					}
+					DEN = {
+						add_ideas = grapemod_no_ai
+						add_equipment_to_stockpile = {
+							type = infantry_equipment_0
+							amount = 5000
+						}
+						add_equipment_to_stockpile = {
+							type = infantry_equipment_1
+							amount = 5000
+						}
+						add_equipment_to_stockpile = {
+							type = support_equipment_1
+							amount = 250
+							}
+						add_equipment_to_stockpile = {
+							type = train_equipment
+							amount = 15
+						}
+						}
 		}
 	}
 		}

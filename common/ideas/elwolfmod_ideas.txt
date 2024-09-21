@@ -144,6 +144,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_infantry_bonus
 			modifier = {
+				experience_gain_army = 0.25
 				training_time_army_factor = -0.89
 				air_training_xp_gain_factor = 10
 				experience_gain_navy_unit_factor = 10
@@ -183,6 +184,13 @@ ideas = {
 				conversion_cost_mil_to_civ_factor = 100
 				enemy_operative_detection_chance = -200
 				trade_laws_cost_factor = 10000
+			}
+		}
+		Spies_no_capture = {
+			removal_cost = -1
+			picture = generic_goods_red_bonus
+			modifier = {
+				enemy_operative_detection_chance = -200
 			}
 		}
 	}

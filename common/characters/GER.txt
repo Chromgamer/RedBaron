@@ -302,7 +302,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { skilled_staffer cavalry_leader armor_officer panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer }
+			traits = { skilled_staffer cavalry_leader armor_officer panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer pre_grind }
 			skill=7
 			attack_skill=6
 			defense_skill=7
@@ -432,7 +432,7 @@ characters={
 		}
 		
 		corps_commander={
-			traits = { skilled_staffer cavalry_leader commando armor_officer panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer }
+			traits = { skilled_staffer cavalry_leader commando armor_officer panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer camouflage_expert pre_grind}
 			skill=7
 			attack_skill=6
 			defense_skill=7
@@ -583,7 +583,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { cavalry_leader brilliant_strategist trait_reckless armor_officer panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer }
+			traits = { cavalry_leader brilliant_strategist trait_reckless armor_officer panzer_leader trickster trait_engineer urban_assault_specialist ranger organizer pre_grind}
 			skill=7
 			attack_skill=4
 			defense_skill=7

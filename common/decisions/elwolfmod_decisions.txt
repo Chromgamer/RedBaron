@@ -36,6 +36,52 @@ political_actions = {
 		}
 	}
 
+	move_capital_to_Kazan = {
+		fire_only_once = yes
+		allowed = {
+			tag = SOV
+		}
+		visible = {
+			tag = SOV
+			GER = { has_war_with = SOV }
+		}
+		complete_effect = {
+			set_capital = {
+				state = 249
+			}
+		}
+	}
+	move_capital_to_Stalingrad = {
+		fire_only_once = yes
+		allowed = {
+			tag = SOV
+		}
+		visible = {
+			tag = SOV
+			GER = { has_war_with = SOV }
+		}
+		complete_effect = {
+			set_capital = {
+				state = 217
+			}
+		}
+	}
+	move_capital_to_Vladivostok = {
+		fire_only_once = yes
+		allowed = {
+			tag = SOV
+		}
+		visible = {
+			tag = SOV
+			GER = { has_war_with = SOV }
+		}
+		complete_effect = {
+			set_capital = {
+				state = 408
+			}
+		}
+	}
+
 	fin_war_eco = {
 		fire_only_once = yes
 		allowed = {

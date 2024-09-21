@@ -344,7 +344,7 @@
 		relative_position_id = JAP_strike_south_doctrine
 		dynamic = yes  
 
-		cost = 0
+		cost = 10
 
 		ai_will_do = {
 			factor = 2
@@ -1698,8 +1698,8 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_armored_divisions
-				bonus = 1.0
-				uses = 1
+				bonus = 0.75
+				uses = 3
 				category = armor	
 			}
 		}
@@ -2286,6 +2286,7 @@
 		id = JAP_carrier_warfare_experiments
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = JAP_new_naval_estimates }
+		mutually_exclusive = { focus = JAP_supremacy_of_the_battlefleet }
 		x = -1
 		y = 1
 		relative_position_id = JAP_new_naval_estimates
@@ -2456,6 +2457,7 @@
 		id = JAP_supremacy_of_the_battlefleet
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = JAP_new_naval_estimates }
+		mutually_exclusive = { focus = JAP_carrier_warfare_experiments }
 		x = 1
 		y = 1
 		relative_position_id = JAP_new_naval_estimates
@@ -2644,7 +2646,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_cruiser_modernization
-				bonus = 3.0
+				bonus = 2.0
 				uses = 1
 				category = cl_tech	
 				category = ca_tech	

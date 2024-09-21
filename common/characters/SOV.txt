@@ -212,7 +212,7 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { cavalry_leader brilliant_strategist trait_cautious armor_officer panzer_leader trickster trait_engineer urban_assault_specialist ranger  organizer}
+			traits = { cavalry_leader brilliant_strategist trait_cautious armor_officer panzer_leader trickster trait_engineer urban_assault_specialist ranger  organizer pre_grind}
 			skill = 7
 			attack_skill = 5
 			defense_skill = 8
@@ -631,23 +631,8 @@ characters = {
 				small= "GFX_idea_SOV_leonid_govorov"
 			}
 		}
-		advisor = {
-			slot = army_chief
-			idea_token = SOV_leonid_govorov
-			allowed = {
-				original_tag = SOV
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 		field_marshal = {
-			traits = { skilled_staffer commando cavalry_leader armor_officer panzer_leader trickster trait_engineer urban_assault_specialist ranger winter_specialist organizer offn
-		 }
+			traits = { skilled_staffer commando cavalry_leader armor_officer panzer_leader trickster trait_engineer urban_assault_specialist ranger winter_specialist organizer pre_grind}
 			skill = 7
 			attack_skill = 6
 			defense_skill = 6

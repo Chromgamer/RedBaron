@@ -373,6 +373,209 @@ Technologies = {
                 }
             }
     }
+    auto_mech = {
+        # icon = generic_operation
+        allowed = {
+        }
+        fire_only_once = no
+        cost = 0
+        ai_will_do = {
+            factor = 0
+        }
+        visible = {
+            NOT = {
+                    tag = HOL
+                }
+        }
+        available = {
+                date > 1937.08.01
+            }
+        complete_effect = {
+            SWE = {
+                create_production_license = {
+                    target = ROOT
+                    equipment = {
+                        type = mechanized_equipment_1
+                        version = 1
+                        new_prioritised = yes
+                    }
+                    cost_factor = 0
+                }
+            }
+        }
+        }
+        auto_mech = {
+            # icon = generic_operation
+            allowed = {
+            }
+            fire_only_once = no
+            cost = 0
+            ai_will_do = {
+                factor = 0
+            }
+            visible = {
+                NOT = {
+                        tag = HOL
+                    }
+                    OR = {
+                        original_tag = GER
+                        original_tag = ITA
+                        original_tag = HUN
+                        original_tag = ROM
+                        original_tag = BUL
+                        original_tag = JAP
+                        original_tag = MAN
+                        original_tag = SIA
+                        original_tag = SPR
+                        original_tag = FIN
+                     }
+            }
+            available = {
+                    date > 1937.08.01
+                }
+            complete_effect = {
+                SWE = {
+                    create_production_license = {
+                        target = ROOT
+                        equipment = {
+                            type = mechanized_equipment_1
+                            version = 1
+                            new_prioritised = yes
+                        }
+                        cost_factor = 0
+                    }
+                }
+            }
+            }
+            auto_gun3 = {
+                # icon = generic_operation
+                allowed = {
+                }
+                fire_only_once = no
+                cost = 0
+                ai_will_do = {
+                    factor = 0
+                }
+                visible = {
+                    NOT = {
+                            tag = HOL
+                        }
+                     OR = {
+                        original_tag = GER
+                        original_tag = ITA
+                        original_tag = HUN
+                        original_tag = ROM
+                        original_tag = BUL
+                        original_tag = JAP
+                        original_tag = MAN
+                        original_tag = SIA
+                        original_tag = SPR
+                        original_tag = FIN
+                     }
+                }
+                available = {
+                        date > 1939.10.01
+                    }
+                complete_effect = {
+                    SWE = {
+                        create_production_license = {
+                            target = ROOT
+                            equipment = {
+                                type = infantry_equipment_3
+                                version = 0
+                                new_prioritised = yes
+                            }
+                            cost_factor = 0
+                        }
+                    }
+                }
+                }
+                       auto_gun3 = {
+                # icon = generic_operation
+                allowed = {
+                }
+                fire_only_once = no
+                cost = 0
+                ai_will_do = {
+                    factor = 0
+                }
+                visible = {
+                    NOT = {
+                            tag = HOL
+                        }
+                     OR = {
+                        original_tag = GER
+                        original_tag = ITA
+                        original_tag = HUN
+                        original_tag = ROM
+                        original_tag = BUL
+                        original_tag = JAP
+                        original_tag = MAN
+                        original_tag = SIA
+                        original_tag = SPR
+                        original_tag = FIN
+                     }
+                }
+                available = {
+                        date > 1939.10.01
+                    }
+                complete_effect = {
+                    SWE = {
+                        create_production_license = {
+                            target = ROOT
+                            equipment = {
+                                type = infantry_equipment_3
+                                version = 0
+                                new_prioritised = yes
+                            }
+                            cost_factor = 0
+                        }
+                    }
+                }
+                }
+                auto_AT3 = {
+                    # icon = generic_operation
+                    allowed = {
+                    }
+                    fire_only_once = no
+                    cost = 0
+                    ai_will_do = {
+                        factor = 0
+                    }
+                    visible = {
+                        NOT = {
+                                tag = HOL
+                            }
+                         OR = {
+                            original_tag = GER
+                            original_tag = ITA
+                            original_tag = HUN
+                            original_tag = ROM
+                            original_tag = BUL
+                            original_tag = JAP
+                            original_tag = MAN
+                            original_tag = SIA
+                            original_tag = SPR
+                            original_tag = FIN
+                         }
+                    }
+                    available = {
+                            date > 1940.3.01
+                        }
+                    complete_effect = {
+                        SWE = {
+                            create_production_license = {
+                                target = ROOT
+                                equipment = {
+                                    type = anti_tank_equipment_3
+                                    version = 0
+                                    new_prioritised = yes
+                                }
+                                cost_factor = 0
+                            }
+                        }
+                    }
+                    }
     ENG_Fighter = {
             # icon = generic_operation
             allowed = {

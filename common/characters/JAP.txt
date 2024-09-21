@@ -64,7 +64,7 @@ characters={
 		}
 
 		corps_commander={
-			traits={ brilliant_strategist politically_connected trickster trait_engineer organizer infantry_leader panzer_leader trickster }
+			traits={ brilliant_strategist politically_connected trickster trait_engineer organizer infantry_leader panzer_leader trickster pre_grind }
 			skill=6
 			attack_skill=5
 			defense_skill=6
@@ -188,7 +188,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer infantry_officer organizer infantry_leader panzer_leader trickster }
+			traits={ career_officer infantry_officer organizer infantry_leader panzer_leader trickster pre_grind}
 			skill=6
 			attack_skill=6
 			defense_skill=4
@@ -250,7 +250,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits = { organizer infantry_leader trait_engineer infantry_expert naval_invader commando trickster trait_mountaineer jungle_rat }
+			traits = { organizer infantry_leader trait_engineer infantry_expert naval_invader commando trickster pre_grind}
 			skill=7
 			attack_skill=5
 			defense_skill=2
@@ -307,7 +307,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ inflexible_strategist trait_reckless JAP_samurai_lineage organizer infantry_leader panzer_leader trickster }
+			traits={ inflexible_strategist trait_reckless JAP_samurai_lineage organizer infantry_leader panzer_leader trickster pre_grind }
 			skill=4
 			attack_skill=4
 			defense_skill=4
@@ -512,7 +512,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer politically_connected fortress_buster organizer infantry_leader panzer_leader trickster }
+			traits={ career_officer politically_connected fortress_buster organizer infantry_leader panzer_leader trickster pre_grind }
 			skill=6
 			attack_skill=4
 			defense_skill=5
@@ -625,7 +625,7 @@ characters={
 		}
 		
 		corps_commander={
-			traits = {  commando naval_invader infantry_leader infantry_expert trait_engineer hill_fighter ranger trait_mountaineer }
+			traits = {  commando naval_invader infantry_leader infantry_expert trait_engineer hill_fighter ranger pre_grind }
 			skill=7
 			attack_skill=5
 			defense_skill=1

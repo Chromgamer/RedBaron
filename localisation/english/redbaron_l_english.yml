@@ -17,7 +17,8 @@
   victory_con_allies_1_desc:0 "Allies control 6 out of 10 Victory points: \nNanjing \nDehli \nAlexandria \nBenghasi \nAmsterdam \nParis \nLyon \nBryansk \nMoscow \nStalingrad"
   victory_con_axis_1:0 "Axis are winning"
   victory_con_axis_1_desc:0 "Axis control 6 out of 10 Victory points: \nNanjing \nDehli \nAlexandria \nBenghasi \nAmsterdam \nParis \nLyon \nBryansk \nMoscow \nStalingrad"
- hosttool_gun3:0 "Gun 3 Hosttool"
+auto_mech:0 "Mechanized Hosttool"
+auto_gun3:0 "Gun 3 Hosttool"
  hosttool_aa2:0 "Anti Air 2 Hosttool"
 hosttool_aa3:0 "Anti Air 3 Hosttool"
 annex_South_Africa:0 "Annex South Africa"
@@ -58,3 +59,7 @@ vp_alies_owns:0 "[ENG.GetFlag] §CAllies§!"
 
 MOD_countdown_to_allied_victory_mission:0 "Imminent [ENG.GetFlag] §CAllied§! §YVictory§!"
 MOD_countdown_to_axis_victory_mission:0 "Imminent [GER.GetFlag] §RAxis§! §YVictory§!"
+
+move_capital_to_Kazan:0 "move Capital to Kazan"
+move_capital_to_Stalingrad:0 "move Capital to Stalingrad"
+move_capital_to_Vladivostok:0 "move Capital to Vladivostok"

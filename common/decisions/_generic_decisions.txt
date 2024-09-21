@@ -1857,15 +1857,23 @@ war_measures = {
 		}
 
 		visible = {
-			has_dlc = "Arms Against Tyranny"
-			NOT = {
-				OR = {
-					tag = ENG #has a focus
-					tag = USA #has a focus
-					tag = SOV #has a focus
-					tag = JAP #has a focus
-				}
-			} 
+			AND = {
+				is_major = yes
+				has_dlc = "Arms Against Tyranny"
+				NOT = {
+					OR = {
+						tag = ENG #has a focus
+						tag = USA #has a focus
+						tag = SOV #has a focus
+						tag = JAP #has a focus
+						tag = CHL #has a focus
+						tag = BRA #has a focus
+						tag = ARG #has a focus
+						tag = AST #has a focus
+						tag = FRA #has a focus
+					}
+				} 
+			}
 		}
 
 		fire_only_once = yes
