@@ -6,3 +6,6 @@ NDefines.NCountry.GIE_DIVISION_DEFENSE_BONUS_ON_CORE = 0 -- Defense bonus factor
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.000000001
 NDefines.NOperatives.OPERATIVE_CAPTURE_DURATION_IN_DAYS = 1
 NDefines.NOperatives.INTEL_NETWORK_DETECTION_GLOBAL_FACTOR = 0
+NDefines.NProduction.MIN_LAND_EQUIPMENT_CONVERSION_RESOURCE_COST_FACTOR = 0		-- Minimum fraction of a land equipment's strategic resource cost that any conversion will cost.
+NDefines.NDiplomacy.LICENSE_ACCEPTANCE_TECH_DIFFERENCE = 20 		-- Acceptance modifier for each year of technology difference.
+NDefines.NDiplomacy.LICENSE_ACCEPTANCE_TECH_DIFFERENCE_BASE = 100    -- Acceptance base for tech difference

@@ -429,10 +429,6 @@ characters = {
 			}
 		}
 
-		allowed_civil_war = {
-			ITA_is_appropriate_cw_side_for_character_split = yes
-		}
-
 		advisor = {
 			cost = 150
 			slot = theorist
@@ -456,14 +452,17 @@ characters = {
 		}
 		
 		corps_commander = {
-			traits = { inflexible_strategist career_officer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			traits = { armor_officer war_hero }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
 			legacy_id = 0
 		}
+	
+		
+		
 	}
 
 	ITA_ubaldo_soddu = {

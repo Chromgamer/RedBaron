@@ -793,8 +793,6 @@
 
 		}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -840,6 +838,7 @@
 			factor = 1
 		}
 		completion_reward = {
+			add_command_power = 30
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = maxime_weygand
 		}
@@ -872,6 +871,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
+
 			add_ideas = { FRA_firepower }
 		}
 	}

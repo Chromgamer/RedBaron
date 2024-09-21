@@ -1483,6 +1483,11 @@ on_actions = {
 					ai_limiter
 				}
 			}
+			TUN = {
+				add_ideas = {
+					ai_limiter
+				}
+			}
 			if = {
 				limit = {
 					has_game_rule = {

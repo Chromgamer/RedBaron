@@ -41,6 +41,7 @@ is_limited_country = {
 		original_tag = VEN
 		original_tag = WST
 		original_tag = IRQ
+		original_tag = TUM
 	}
 }
 

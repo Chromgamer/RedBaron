@@ -579,20 +579,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_ministry_of_italian_africa
 		cost = 5
-		available = {
-			OR = {
-				any_controlled_state = {
-					is_core_of = LBA
-					is_fully_controlled_by = ROOT
-				}
-				any_subject_country = { #FOR PUPPETS
-					any_controlled_state = {
-						is_core_of = LBA
-						is_fully_controlled_by = PREV
-					}
-				}
-			}
-		}
+		
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
@@ -1778,17 +1765,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_regional_development
 		cost = 10
-		available = {
-			any_state = {
-				OR = {
-					is_core_of = LBA
-					is_core_of = ERI
-					is_core_of = SOM
-					is_core_of = ETH
-				}
-				state_is_fully_controlled_by_ROOT_or_subject = yes
-			}
-		}
+		
 
 		search_filters = {FOCUS_FILTER_MANPOWER}
 
@@ -2337,17 +2314,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ITA_polizia_dell_africa_italiana
 		cost = 10
-		available = {
-			any_state = {
-				OR = {
-					is_core_of = LBA
-					is_core_of = ERI
-					is_core_of = SOM
-					is_core_of = ETH
-				}
-				state_is_fully_controlled_by_ROOT_or_subject = yes
-			}
-		}
+		
 
 		search_filters = {FOCUS_FILTER_MANPOWER}
 

@@ -62,7 +62,12 @@ set_technology = {
 	antiair2 = 1
 	antiair5 = 1
 	antitank5 = 1
+	antitank2 = 1
 	mechanised_infantry = 1
+	improved_infantry_weapons = 1
+	improved_infantry_weapons_2 = 1
+	advanced_heavy_tank_chassis = 1
+
 
 }
 

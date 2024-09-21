@@ -864,7 +864,7 @@ focus_tree = {
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = ROM_invest_in_the_iar }
 		prerequisite = { focus = ROM_hunedoara_steel_works }
-		x = 0
+		x = 1
 		y = 5
 		relative_position_id = ROM_civil_works
 
@@ -901,7 +901,7 @@ focus_tree = {
 		id = ROM_expand_the_university_of_bucharest
 		icon = GFX_focus_research
 		prerequisite = { focus = ROM_expand_ploiesti_oil_production }
-		x = 0
+		x = 1
 		y = 6
 		relative_position_id = ROM_civil_works
 
@@ -932,7 +932,7 @@ focus_tree = {
 		id = ROM_exploit_the_baita_mines
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = ROM_expand_the_university_of_bucharest }
-		x = 0
+		x = 1
 		y = 7
 		relative_position_id = ROM_civil_works
 

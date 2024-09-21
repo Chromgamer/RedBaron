@@ -176,3 +176,7 @@ PHI = {
 	color = rgb { 152 130 191 }
 	color_ui = rgb { 198 169 248 }
 }
+TUM = {
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
+}

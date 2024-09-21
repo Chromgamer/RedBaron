@@ -3039,53 +3039,49 @@ focus_tree = {
 			random_country = {
 				limit = {
 					original_tag = CAN
+					exists = yes
 					is_in_faction_with = ROOT
 				}
-				add_opinion_modifier = {
-					target = ENG
-					modifier = ENG_commonwealth_ties
-				}
+				add_political_power = 50
+				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
 			}
 			random_country = {
 				limit = {
 					original_tag = AST
+					exists = yes
 					is_in_faction_with = ROOT
 				}
-				add_opinion_modifier = {
-					target = ENG
-					modifier = ENG_commonwealth_ties
-				}
+				add_political_power = 50
+				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
 			}
 			random_country = {
 				limit = {
 					original_tag = RAJ
+					exists = yes
 					is_in_faction_with = ROOT
 				}
-				add_opinion_modifier = {
-					target = ENG
-					modifier = ENG_commonwealth_ties
-				}
+				add_political_power = 50
+				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
 			}
 			random_country = {
 				limit = {
 					original_tag = NZL
+					exists = yes
 					is_in_faction_with = ROOT
 				}
-				add_opinion_modifier = {
-					target = ENG
-					modifier = ENG_commonwealth_ties
-				}
+				add_political_power = 50
+				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
 			}
 			random_country = {
 				limit = {
 					original_tag = SAF
+					exists = yes
 					is_in_faction_with = ROOT
 				}
-				add_opinion_modifier = {
-					target = ENG
-					modifier = ENG_commonwealth_ties
-				}
+				add_political_power = 50
+				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
 			}
+
 		}
 	}
 	focus = {
